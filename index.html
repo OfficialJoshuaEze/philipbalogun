@@ -1,0 +1,1964 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Philip A. Balogun — Infrastructure Transformation & Public Value Delivery</title>
+  <meta name="description" content="Philip A. Balogun delivers infrastructure transformation, public value delivery, advisory and training for governments, development programmes and public institutions." />
+  <meta name="keywords" content="Infrastructure delivery, public value, PPP readiness, institutional reform, training, capacity building, Ministry of Health, Abia State Infrastructure" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Philip A. Balogun — Infrastructure Transformation & Public Value Delivery" />
+  <meta property="og:description" content="Public-value advisory, infrastructure transformation and executive capacity building for public institutions including Ministry of Health training." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/ministry of health/DSC01825.jpg" />
+  <meta property="og:image:alt" content="Ministry of Health training session" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Philip A. Balogun — Infrastructure Transformation & Public Value Delivery" />
+  <meta name="twitter:description" content="Public-value advisory, infrastructure transformation and executive capacity building for public institutions including Ministry of Health training." />
+  <meta name="twitter:image" content="images/ministry of health/DSC01825.jpg" />
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Philip A. Balogun — Infrastructure Transformation & Public Value Delivery",
+    "description": "Philip A. Balogun delivers infrastructure transformation, public value delivery, advisory and training for governments, development programmes and public institutions.",
+    "publisher": {
+      "@type": "Person",
+      "name": "Philip A. Balogun"
+    }
+  }
+  </script>
+  <!-- Google Fonts: Plus Jakarta Sans (clean, professional, distinctive) -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+  <!-- Font Awesome 6 for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest:  { DEFAULT: '#1B3A30', 700: '#162F27', 600: '#1B3A30', 500: '#24503F', 400: '#2D6350' },
+            sage:    { DEFAULT: '#EDF5F0', 100: '#F4FAF7', 200: '#E2EFE8', 300: '#C8E0D3' },
+            accent:  { DEFAULT: '#3E9E72', light: '#4DB882', dark: '#2E7D58' },
+          },
+          fontFamily: { jakarta: ['"Plus Jakarta Sans"', 'sans-serif'] },
+          boxShadow: {
+            'card': '0 2px 16px 0 rgba(27,58,48,0.08)',
+            'card-hover': '0 8px 32px 0 rgba(27,58,48,0.16)',
+          },
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Base */
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Plus Jakarta Sans', sans-serif; color: #1a2a25; background: #fff; }
+
+    /* ─── CSS VARIABLES ─── */
+    :root {
+      --forest: #1B3A30;
+      --forest-deep: #132A22;
+      --sage-bg: #EDF5F0;
+      --accent: #3E9E72;
+      --accent-light: #4DB882;
+      --text-muted: #6B7B74;
+      --border-light: #E2EFE8;
+    }
+
+    /* ─── UTILITY OVERRIDES ─── */
+    .bg-forest     { background-color: var(--forest); }
+    .bg-forest-deep{ background-color: var(--forest-deep); }
+    .bg-sage       { background-color: var(--sage-bg); }
+    .text-accent   { color: var(--accent); }
+    .border-sage   { border-color: var(--border-light); }
+
+    /* ─── NAV ─── */
+    .nav-link { position: relative; color: rgba(255,255,255,0.7); font-size: 0.875rem; font-weight: 500; transition: color .2s; }
+    .nav-link:hover, .nav-link.active { color: #fff; }
+    .nav-link.active::after {
+      content: '';
+      position: absolute; bottom: -4px; left: 0; right: 0;
+      height: 2px; background: #fff; border-radius: 2px;
+    }
+
+    /* ─── SECTION LABEL ─── */
+    .section-label {
+      display: inline-flex; align-items: center; gap: 6px;
+      color: var(--accent); font-size: 0.78rem; font-weight: 700;
+      letter-spacing: .06em; text-transform: uppercase; margin-bottom: .9rem;
+    }
+    .section-label::before { content: '+'; font-size: 1rem; font-weight: 800; }
+
+    /* ─── HERO ─── */
+    .hero-bg {
+      background: var(--forest);
+      background-image:
+        radial-gradient(ellipse 70% 60% at 75% 50%, rgba(62,158,114,.13) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 80% at 15% 80%, rgba(0,0,0,.18) 0%, transparent 60%);
+    }
+    .hero-photo-wrap {
+      position: relative; display: inline-block;
+    }
+    .hero-photo-wrap::before {
+      content: '';
+      position: absolute; inset: -10px; border-radius: 1.5rem;
+      background: radial-gradient(ellipse at 50% 100%, rgba(62,158,114,.35) 0%, transparent 65%);
+      z-index: 0;
+    }
+    .hero-photo {
+      position: relative; z-index: 1;
+      width: 340px; height: 460px;
+      border-radius: 1.5rem; overflow: hidden;
+      box-shadow: 0 24px 60px rgba(0,0,0,.35);
+      object-fit: cover; object-position: top center;
+      display: block;
+    }
+    .licensed-badge {
+      position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%);
+      background: rgba(255,255,255,.14); backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,.28);
+      border-radius: 50px; padding: 8px 18px;
+      display: flex; align-items: center; gap: 8px;
+      white-space: nowrap; z-index: 2;
+    }
+    .rating-pill {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.18);
+      border-radius: 50px; padding: 6px 14px;
+    }
+
+    /* ─── CARDS ─── */
+    .service-card {
+      background: #fff; border: 1.5px solid var(--border-light);
+      border-radius: 1.25rem; padding: 1.75rem;
+      transition: border-color .2s, box-shadow .2s, transform .2s;
+      cursor: pointer;
+    }
+    .service-card:hover {
+      border-color: var(--accent); box-shadow: 0 8px 30px rgba(62,158,114,.14);
+      transform: translateY(-2px);
+    }
+    .service-card.featured {
+      background: var(--forest); border-color: var(--forest);
+      color: #fff;
+    }
+    .service-icon {
+      width: 48px; height: 48px; border-radius: .875rem;
+      background: var(--sage-bg); display: flex; align-items: center; justify-content: center;
+      margin-bottom: 1.1rem; font-size: 1.1rem; color: var(--accent);
+    }
+    .featured .service-icon { background: rgba(255,255,255,.15); color: #fff; }
+
+    /* ─── WHY CHOOSE ─── */
+    .why-point {
+      display: flex; gap: 14px; align-items: flex-start;
+    }
+    .why-icon {
+      flex-shrink: 0; width: 40px; height: 40px; border-radius: .75rem;
+      background: rgba(62,158,114,.14); display: flex; align-items: center; justify-content: center;
+      color: var(--accent); font-size: .9rem;
+    }
+
+    /* ─── INDUSTRY PILLS ─── */
+    .industry-pill {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: var(--sage-bg); border: 1.5px solid var(--border-light);
+      border-radius: 50px; padding: 9px 20px;
+      font-size: 0.875rem; font-weight: 600; color: var(--forest);
+      white-space: nowrap; transition: background .2s, border-color .2s;
+    }
+    .industry-pill:hover { background: #D8EDE4; border-color: var(--accent); }
+    .pill-icon {
+      width: 28px; height: 28px; border-radius: 50%;
+      background: var(--forest); color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-size: .65rem;
+    }
+    .industries-track {
+      display: flex; gap: 12px; overflow-x: auto;
+      -webkit-overflow-scrolling: touch; scrollbar-width: none;
+      padding-bottom: 4px;
+    }
+    .industries-track::-webkit-scrollbar { display: none; }
+
+    /* ─── TESTIMONIALS ─── */
+    .testi-card {
+      background: #fff; border-radius: 1.25rem;
+      box-shadow: 0 2px 20px rgba(27,58,48,.07);
+      padding: 2rem;
+    }
+    .testi-card .quote-mark {
+      font-size: 3.5rem; font-weight: 800; line-height: 1;
+      color: var(--accent); margin-bottom: .5rem;
+    }
+    .testi-card.small .quote-mark { font-size: 2.5rem; }
+    .avatar { border-radius: 50%; object-fit: cover; object-position: top; }
+
+    /* ─── CLIENT LOGO MARQUEE ─── */
+    .logo-marquee-shell {
+      position: relative;
+      overflow: hidden;
+      border-radius: 1.75rem;
+      background: #fff;
+      border: 1.5px solid var(--border-light);
+      box-shadow: 0 2px 20px rgba(27,58,48,.07);
+    }
+    .logo-marquee-shell::before,
+    .logo-marquee-shell::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 90px;
+      z-index: 2;
+      pointer-events: none;
+    }
+    .logo-marquee-shell::before {
+      left: 0;
+      background: linear-gradient(90deg, #fff 0%, rgba(255,255,255,0) 100%);
+    }
+    .logo-marquee-shell::after {
+      right: 0;
+      background: linear-gradient(270deg, #fff 0%, rgba(255,255,255,0) 100%);
+    }
+    .logo-marquee-track {
+      display: flex;
+      width: max-content;
+      gap: 18px;
+      padding: 1.25rem 0;
+      animation: logoMarquee 36s linear infinite;
+    }
+    .logo-marquee-shell:hover .logo-marquee-track { animation-play-state: paused; }
+    .logo-item {
+      width: 190px;
+      min-height: 104px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: .65rem;
+      background: var(--sage-bg);
+      border: 1.5px solid var(--border-light);
+      border-radius: 1.15rem;
+      padding: 1rem;
+      transition: transform .2s, border-color .2s, box-shadow .2s, background .2s;
+    }
+    .logo-item:hover {
+      transform: translateY(-2px);
+      border-color: var(--accent);
+      background: #fff;
+      box-shadow: 0 8px 30px rgba(62,158,114,.12);
+    }
+    .logo-item img {
+      max-width: 118px;
+      max-height: 42px;
+      object-fit: contain;
+      filter: grayscale(1);
+      opacity: .76;
+      transition: filter .2s, opacity .2s, transform .2s;
+    }
+    .logo-item:hover img { filter: grayscale(0); opacity: 1; transform: scale(1.03); }
+    .logo-item span {
+      color: var(--forest);
+      font-size: .72rem;
+      font-weight: 700;
+      text-align: center;
+      line-height: 1.3;
+    }
+    .logo-proof-card {
+      background: var(--forest);
+      color: #fff;
+      border-radius: 1.5rem;
+      padding: 1.5rem;
+      box-shadow: 0 12px 34px rgba(27,58,48,.18);
+    }
+    @keyframes logoMarquee {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+
+    /* ─── PUBLICATIONS & RESEARCH ─── */
+    .publication-card {
+      background: #fff;
+      border: 1.5px solid var(--border-light);
+      border-radius: 1.5rem;
+      padding: 1.6rem;
+      box-shadow: 0 2px 20px rgba(27,58,48,.07);
+      transition: transform .2s, border-color .2s, box-shadow .2s;
+      height: 100%;
+    }
+    .publication-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--accent);
+      box-shadow: 0 10px 34px rgba(62,158,114,.14);
+    }
+    .publication-meta {
+      display: inline-flex;
+      align-items: center;
+      gap: .45rem;
+      color: var(--accent);
+      font-size: .72rem;
+      font-weight: 800;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      margin-bottom: .9rem;
+    }
+    .publication-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--forest);
+      color: #fff;
+      font-weight: 700;
+      font-size: .82rem;
+      padding: 10px 18px;
+      border-radius: 999px;
+      text-decoration: none;
+      transition: background .2s, transform .15s;
+    }
+    .publication-link:hover { background: #244d40; transform: translateY(-1px); }
+    .publication-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      background: var(--sage-bg);
+      border: 1px solid var(--border-light);
+      color: var(--forest);
+      border-radius: 999px;
+      padding: .45rem .75rem;
+      font-size: .72rem;
+      font-weight: 700;
+    }
+
+
+
+    /* ─── MASONRY FILTER GALLERY ─── */
+    .gallery-filter {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: #fff; border: 1.5px solid var(--border-light);
+      border-radius: 50px; padding: 10px 18px;
+      color: var(--forest); font-size: .82rem; font-weight: 700;
+      font-family: inherit; cursor: pointer;
+      transition: background .2s, color .2s, border-color .2s, box-shadow .2s, transform .15s;
+    }
+    .gallery-filter:hover {
+      border-color: var(--accent);
+      box-shadow: 0 8px 24px rgba(62,158,114,.10);
+      transform: translateY(-1px);
+    }
+    .gallery-filter.active {
+      background: var(--forest); color: #fff; border-color: var(--forest);
+      box-shadow: 0 8px 24px rgba(27,58,48,.16);
+    }
+    .gallery-filter i { font-size: .72rem; opacity: .8; }
+
+    .gallery-masonry {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+    }
+    .gallery-card {
+      width: 100%;
+      display: block;
+      margin: 0;
+      background: #fff;
+      border: 1.5px solid var(--border-light);
+      border-radius: 1.25rem;
+      overflow: hidden;
+      box-shadow: 0 2px 20px rgba(27,58,48,.07);
+      transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease, opacity .25s ease;
+      cursor: zoom-in;
+    }
+    .gallery-card:hover {
+      transform: translateY(-3px);
+      border-color: var(--accent);
+      box-shadow: 0 12px 36px rgba(27,58,48,.14);
+    }
+    .gallery-image-wrap {
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(ellipse 70% 55% at 75% 20%, rgba(62,158,114,.10), transparent 65%),
+        var(--sage-bg);
+    }
+    .gallery-image-wrap img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      transition: transform .55s ease;
+    }
+    .gallery-card:hover .gallery-image-wrap img { transform: scale(1.045); }
+    .gallery-image-wrap::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(180deg, transparent 45%, rgba(19,42,34,.72) 100%);
+      opacity: .82;
+      pointer-events: none;
+    }
+    .gallery-badge {
+      position: absolute; top: 14px; left: 14px; z-index: 2;
+      display: inline-flex; align-items: center; gap: 7px;
+      background: rgba(255,255,255,.88); backdrop-filter: blur(8px);
+      border: 1px solid rgba(255,255,255,.62);
+      color: var(--forest); border-radius: 50px;
+      padding: 7px 12px; font-size: .68rem; font-weight: 800;
+      letter-spacing: .03em; text-transform: uppercase;
+    }
+    .gallery-caption {
+      padding: 1.15rem 1.25rem 1.25rem;
+    }
+    .gallery-caption h3 {
+      font-size: .98rem;
+      line-height: 1.35;
+      font-weight: 800;
+      color: #111827;
+      margin-bottom: .4rem;
+    }
+    .gallery-caption p {
+      font-size: .8rem;
+      line-height: 1.7;
+      color: var(--text-muted);
+    }
+    .gallery-hidden { display: none !important; }
+
+    @media (min-width: 640px) {
+      .gallery-masonry { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (min-width: 1024px) {
+      .gallery-masonry { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    /* ─── GALLERY LIGHTBOX ─── */
+    body.lightbox-open { overflow: hidden; }
+
+    .portfolio-lightbox {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.25rem;
+      background:
+        radial-gradient(ellipse 70% 60% at 80% 20%, rgba(62,158,114,.22), transparent 70%),
+        rgba(19,42,34,.94);
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity .25s ease, visibility .25s ease;
+    }
+    .portfolio-lightbox.open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+    .lightbox-panel {
+      width: min(1120px, 100%);
+      max-height: 92vh;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 330px;
+      background: #fff;
+      border: 1px solid rgba(255,255,255,.22);
+      border-radius: 1.5rem;
+      overflow: hidden;
+      box-shadow: 0 32px 90px rgba(0,0,0,.42);
+      transform: translateY(18px) scale(.98);
+      transition: transform .25s ease;
+    }
+    .portfolio-lightbox.open .lightbox-panel { transform: none; }
+
+    .lightbox-image-stage {
+      position: relative;
+      min-height: 560px;
+      background:
+        radial-gradient(ellipse 70% 55% at 70% 18%, rgba(62,158,114,.16), transparent 65%),
+        #0b1f19;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.25rem;
+    }
+    .lightbox-image-stage img {
+      max-width: 100%;
+      max-height: 78vh;
+      object-fit: contain;
+      border-radius: 1rem;
+      box-shadow: 0 18px 54px rgba(0,0,0,.32);
+    }
+    .lightbox-close {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      z-index: 4;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      border: 1px solid rgba(255,255,255,.24);
+      background: rgba(255,255,255,.12);
+      color: #fff;
+      backdrop-filter: blur(10px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background .2s, transform .15s;
+    }
+    .lightbox-close:hover { background: rgba(255,255,255,.2); transform: translateY(-1px); }
+
+    .lightbox-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 3;
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      border: 1px solid rgba(255,255,255,.24);
+      background: rgba(255,255,255,.12);
+      color: #fff;
+      backdrop-filter: blur(10px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background .2s, transform .15s;
+    }
+    .lightbox-arrow:hover { background: rgba(255,255,255,.22); }
+    .lightbox-prev { left: 18px; }
+    .lightbox-next { right: 18px; }
+
+    .lightbox-info {
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+      padding: 1.6rem;
+      background:
+        radial-gradient(ellipse 80% 40% at 100% 0%, rgba(62,158,114,.08), transparent 70%),
+        #fff;
+    }
+    .lightbox-kicker {
+      display: inline-flex;
+      width: fit-content;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 13px;
+      border-radius: 50px;
+      background: var(--sage-bg);
+      color: var(--forest);
+      font-size: .68rem;
+      font-weight: 800;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+    .lightbox-info h3 {
+      font-size: 1.45rem;
+      line-height: 1.25;
+      font-weight: 800;
+      color: #111827;
+      margin-bottom: .75rem;
+    }
+    .lightbox-info p {
+      font-size: .88rem;
+      line-height: 1.8;
+      color: var(--text-muted);
+      margin-bottom: 1.25rem;
+    }
+    .lightbox-counter {
+      margin-top: auto;
+      padding-top: 1rem;
+      border-top: 1.5px solid var(--border-light);
+      color: var(--text-muted);
+      font-size: .78rem;
+      font-weight: 700;
+    }
+    .lightbox-thumbs {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      padding-top: 1rem;
+    }
+    .lightbox-thumbs::-webkit-scrollbar { display: none; }
+    .lightbox-thumb {
+      flex: 0 0 auto;
+      width: 68px;
+      height: 54px;
+      border-radius: .75rem;
+      overflow: hidden;
+      border: 2px solid transparent;
+      padding: 0;
+      background: var(--sage-bg);
+      cursor: pointer;
+      opacity: .68;
+      transition: border-color .2s, opacity .2s, transform .15s;
+    }
+    .lightbox-thumb:hover, .lightbox-thumb.active {
+      border-color: var(--accent);
+      opacity: 1;
+      transform: translateY(-1px);
+    }
+    .lightbox-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    @media (max-width: 900px) {
+      .portfolio-lightbox { align-items: flex-end; padding: .75rem; }
+      .lightbox-panel {
+        grid-template-columns: 1fr;
+        max-height: 94vh;
+        overflow-y: auto;
+      }
+      .lightbox-image-stage { min-height: 360px; padding: 3.75rem .85rem 1rem; }
+      .lightbox-image-stage img { max-height: 58vh; }
+      .lightbox-info { padding: 1.2rem; }
+      .lightbox-info h3 { font-size: 1.2rem; }
+      .lightbox-arrow { width: 40px; height: 40px; }
+      .lightbox-prev { left: 12px; }
+      .lightbox-next { right: 12px; }
+    }
+
+    /* ─── FAQ ─── */
+    .faq-item { border: 1.5px solid var(--border-light); border-radius: 1rem; overflow: hidden; }
+    .faq-trigger {
+      width: 100%; display: flex; justify-content: space-between; align-items: center;
+      padding: 1.1rem 1.35rem; text-align: left; cursor: pointer;
+      background: transparent; border: none; outline: none;
+      font-family: inherit; transition: background .15s;
+    }
+    .faq-trigger:hover { background: var(--sage-bg); }
+    .faq-body {
+      max-height: 0; overflow: hidden;
+      transition: max-height .35s cubic-bezier(.4,0,.2,1);
+    }
+    .faq-body-inner { padding: 0 1.35rem 1.1rem; }
+    .faq-chevron { transition: transform .3s cubic-bezier(.4,0,.2,1); color: var(--text-muted); }
+    .faq-item.open .faq-chevron { transform: rotate(180deg); }
+
+    /* ─── CTA BANNER ─── */
+    .cta-banner-bg {
+      background: var(--forest);
+      background-image: radial-gradient(ellipse 55% 80% at 80% 50%, rgba(62,158,114,.18) 0%, transparent 65%);
+      border-radius: 2rem;
+    }
+
+    /* ─── FOOTER ─── */
+    .footer-link { color: rgba(255,255,255,.5); font-size: .875rem; transition: color .2s; display: block; }
+    .footer-link:hover { color: rgba(255,255,255,.9); }
+    .social-btn {
+      width: 34px; height: 34px; border-radius: 50%;
+      background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.15);
+      display: flex; align-items: center; justify-content: center;
+      color: rgba(255,255,255,.7); font-size: .75rem;
+      transition: background .2s, color .2s;
+    }
+    .social-btn:hover { background: rgba(255,255,255,.2); color: #fff; }
+
+    /* ─── BUTTON STYLES ─── */
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--accent); color: #fff;
+      font-weight: 700; font-size: .875rem; font-family: inherit;
+      padding: 11px 24px; border-radius: 50px; border: none; cursor: pointer;
+      transition: background .2s, transform .15s, box-shadow .2s;
+      box-shadow: 0 4px 14px rgba(62,158,114,.35);
+    }
+    .btn-primary:hover { background: var(--accent-light); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(62,158,114,.45); }
+    .btn-outline-white {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: transparent; color: #fff;
+      font-weight: 700; font-size: .875rem; font-family: inherit;
+      padding: 11px 24px; border-radius: 50px;
+      border: 1.5px solid rgba(255,255,255,.35); cursor: pointer;
+      transition: background .2s, border-color .2s;
+    }
+    .btn-outline-white:hover { background: rgba(255,255,255,.1); border-color: rgba(255,255,255,.7); }
+    .btn-forest {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--forest); color: #fff;
+      font-weight: 700; font-size: .875rem; font-family: inherit;
+      padding: 11px 26px; border-radius: 50px; border: none; cursor: pointer;
+      transition: background .2s, transform .15s;
+    }
+    .btn-forest:hover { background: #244d40; transform: translateY(-1px); }
+
+    .contact-card {
+      background: #fff;
+      border: 1.5px solid var(--border-light);
+      border-radius: 2rem;
+      padding: 2rem;
+      box-shadow: 0 20px 60px rgba(27,58,48,.12);
+      overflow: hidden;
+    }
+    .contact-card h2 {
+      font-size: 2rem;
+      line-height: 1.1;
+      margin-bottom: 1rem;
+    }
+    .contact-card p {
+      color: var(--text-muted);
+      margin-bottom: 1.75rem;
+    }
+    .contact-field {
+      width: 100%;
+      border: 1.5px solid var(--border-light);
+      border-radius: 1rem;
+      padding: 1rem 1.15rem;
+      background: #fff;
+      color: #1a2a25;
+      font-size: .95rem;
+      outline: none;
+      transition: border-color .2s, box-shadow .2s;
+    }
+    .contact-field:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 4px rgba(62,158,114,.12);
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+    .contact-submit-wrap {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 1rem;
+    }
+    .form-notice {
+      color: #1b5e20;
+      font-size: .93rem;
+      margin-top: .8rem;
+      min-height: 1.2rem;
+    }
+
+    @media (min-width: 768px) {
+      .contact-grid { grid-template-columns: 1fr 1fr; }
+      .contact-grid textarea { grid-column: 1 / -1; }
+    }
+
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: none; } }
+    .fade-up { animation: fadeUp .55s ease both; }
+    .fade-up-d1 { animation-delay: .1s; }
+    .fade-up-d2 { animation-delay: .2s; }
+    .fade-up-d3 { animation-delay: .3s; }
+    .fade-up-d4 { animation-delay: .4s; }
+
+    /* ─── MOBILE TWEAKS ─── */
+    @media (max-width: 768px) {
+      .hero-photo { width: 260px; height: 360px; }
+    }
+    @media (max-width: 480px) {
+      .hero-photo { width: 220px; height: 300px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ════════════════════════════════════════
+     NAVIGATION
+════════════════════════════════════════ -->
+<nav id="navbar" class="bg-forest sticky top-0 z-50" style="box-shadow: 0 2px 20px rgba(0,0,0,.25);">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="flex items-center justify-between h-[62px]">
+
+      <!-- Logo -->
+      <a href="#home" class="flex items-center gap-2.5 no-underline">
+        <div class="w-8 h-8 rounded-full bg-accent flex items-center justify-center flex-shrink-0" style="background:var(--accent);">
+          <i class="fas fa-chart-pie text-white text-xs"></i>
+        </div>
+        <div class="leading-tight">
+          <span class="text-white font-bold text-sm block">Philip A.</span>
+          <span class="text-xs block" style="color:rgba(255,255,255,.5); margin-top:-2px;">Balogun</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <div class="hidden md:flex items-center gap-7">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Advisory</a>
+        <a href="#client-portfolio" class="nav-link">Portfolio</a>
+        <a href="#cta" class="nav-link">Work With Philip</a>
+      </div>
+
+      <!-- Desktop CTA -->
+      <div class="hidden md:flex items-center gap-3">
+        <button class="btn-primary py-[9px] px-[22px]">
+          <i class="fas fa-calendar-check text-xs"></i> Contact
+        </button>
+      </div>
+
+      <!-- Mobile Hamburger -->
+      <button id="menu-btn" class="md:hidden text-white p-2 rounded-lg" aria-label="Menu">
+        <i class="fas fa-bars text-lg"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden pb-4 border-t border-white/10 mt-1">
+      <div class="flex flex-col gap-1 pt-3">
+        <a href="#home" class="nav-link block py-2 px-1">Home</a>
+        <a href="#about" class="nav-link block py-2 px-1">About</a>
+        <a href="#services" class="nav-link block py-2 px-1">Advisory</a>
+        <a href="#client-portfolio" class="nav-link block py-2 px-1">Portfolio</a>
+        <a href="#cta" class="nav-link block py-2 px-1">Work With Philip</a>
+        <button class="btn-primary mt-3 justify-center">
+          <i class="fas fa-calendar-check text-xs"></i> Start a Conversation
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<!-- ════════════════════════════════════════
+     HERO SECTION
+════════════════════════════════════════ -->
+<section id="home" class="hero-bg text-white py-16 md:py-24 overflow-hidden">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+
+      <!-- Left: Copy -->
+      <div class="fade-up">
+        <h1 class="text-[2.6rem] sm:text-5xl lg:text-[3.4rem] font-extrabold leading-[1.08] tracking-tight mb-5">
+          Where infrastructure, policy, finance and technology meet public value.
+        </h1>
+        <p class="text-sm sm:text-base leading-relaxed mb-8 max-w-md" style="color:rgba(255,255,255,.68);">
+          Designing delivery systems for resilient infrastructure, stronger institutions and sustainable public outcomes.
+        </p>
+
+        <!-- Book CTA -->
+        <div class="mb-8">
+          <button class="btn-primary text-sm">
+            <i class="fas fa-calendar-check"></i>
+            Explore Advisory Work
+          </button>
+        </div>
+
+        <!-- Stars + Count -->
+        <div class="flex items-center gap-3 mb-10">
+          <div class="rating-pill">
+            <div class="flex gap-0.5">
+              <i class="fas fa-star text-yellow-400 text-xs"></i>
+              <i class="fas fa-star text-yellow-400 text-xs"></i>
+              <i class="fas fa-star text-yellow-400 text-xs"></i>
+              <i class="fas fa-star text-yellow-400 text-xs"></i>
+              <i class="fas fa-star-half-alt text-yellow-400 text-xs"></i>
+            </div>
+            <span class="text-white font-bold text-sm">12+</span>
+          </div>
+          <span class="text-xs" style="color:rgba(255,255,255,.55);">years across infrastructure, advisory, training and public-value delivery</span>
+        </div>
+
+        <!-- Name + Advisory Tag -->
+        <div class="border-t border-white/10 pt-6">
+          <p class="text-white font-bold text-lg mb-1">Philip A. Balogun</p>
+          <p class="text-xs leading-relaxed" style="color:rgba(255,255,255,.48);">
+            Infrastructure Transformation, Public Value Delivery, PPP &amp; Investment Readiness,<br>
+            ESG, Urban Systems, AI/Data-enabled Delivery &amp; Institutional Reform
+          </p>
+        </div>
+      </div>
+
+      <!-- Right: Photo -->
+      <div class="flex justify-center lg:justify-end fade-up fade-up-d2">
+        <div class="hero-photo-wrap">
+          <!-- REPLACE SRC with real portrait photo -->
+          <img
+            src="hero.png"
+            alt="Philip A. Balogun — Infrastructure Transformation and Public Value Delivery Advisor"
+            class="hero-photo"
+          />
+          <!-- Licensed badge -->
+          <div class="licensed-badge">
+            <i class="fas fa-check-circle text-xs" style="color:var(--accent-light);"></i>
+            <span class="text-white text-xs font-semibold">Global advisory profile</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     ABOUT SECTION
+════════════════════════════════════════ -->
+<section id="about" class="py-16 md:py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+
+      <!-- Left: Photo -->
+      <div class="order-2 lg:order-1">
+        <div class="rounded-2xl overflow-hidden w-full" style="height: 420px;">
+          <!-- REPLACE SRC with real about photo -->
+          <img
+            src="about.png"
+            alt="Philip A. Balogun — advisory and institutional delivery profile"
+            class="w-full h-full object-cover object-top"
+          />
+        </div>
+      </div>
+
+      <!-- Right: Content -->
+      <div class="order-1 lg:order-2">
+        <span class="section-label">About Philip</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 leading-tight mb-1">
+          Infrastructure Transformation &amp; Public Value Delivery
+        </h2>
+        <p class="text-sm leading-7 mt-4 mb-7" style="color:var(--text-muted);">
+          Philip A. Balogun works at the intersection of infrastructure, institutions and impact. His professional journey has moved from technical delivery into a broader public-value agenda: how infrastructure is planned, financed, governed, delivered, maintained and translated into better outcomes for people.
+        </p>
+
+        <button class="btn-forest mb-10">
+          Read Full Profile
+          <i class="fas fa-arrow-right text-xs"></i>
+        </button>
+
+        <!-- Credentials Row -->
+        <div class="grid grid-cols-2 gap-5 pt-6" style="border-top: 1.5px solid var(--border-light);">
+          <div>
+            <div class="flex items-center gap-2 mb-1">
+              <i class="fas fa-id-card text-xs" style="color:var(--accent);"></i>
+              <span class="text-[10px] font-bold uppercase tracking-wider" style="color:var(--text-muted);">Core Credentials</span>
+            </div>
+            <p class="text-sm font-semibold text-gray-800">PMP · PMI-ACP · PMI-RMP · CP3P Foundation</p>
+          </div>
+          <div>
+            <div class="flex items-center gap-2 mb-1">
+              <i class="fas fa-map-marker-alt text-xs" style="color:var(--accent);"></i>
+              <span class="text-[10px] font-bold uppercase tracking-wider" style="color:var(--text-muted);">Location</span>
+            </div>
+            <p class="text-sm font-semibold text-gray-800">Abuja / Lagos / Global Remote</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     SERVICES SECTION
+════════════════════════════════════════ -->
+<section id="services" class="py-16 md:py-24 bg-sage">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+
+    <!-- Header -->
+    <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-12">
+      <div>
+        <span class="section-label">Advisory</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 leading-tight">
+          Advisory <span style="color:var(--accent);">Offered</span>
+        </h2>
+        <p class="mt-2 text-sm" style="color:var(--text-muted);">
+          Cross-cutting advisory practices for institutions, programmes and public-value organisations
+        </p>
+      </div>
+    </div>
+
+    <!-- Cards Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+      <!-- Consulting Advisory -->
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+        <h3 class="font-bold text-base text-gray-900 mb-2">Consulting Advisory</h3>
+        <p class="text-sm leading-relaxed" style="color:var(--text-muted);">Project diagnostics, capital project governance, contractor performance, risk controls, quality assurance, lifecycle planning and delivery recovery.</p>
+      </div>
+
+      <!-- PPP &amp; Investment Readiness — FEATURED -->
+      <div class="service-card featured relative overflow-hidden">
+        <button class="absolute top-5 right-5 bg-white text-[11px] font-bold text-gray-800 rounded-full px-4 py-1 hover:bg-gray-100 transition-colors">Learn More</button>
+        <div class="service-icon"><i class="fas fa-building"></i></div>
+        <h3 class="font-bold text-base mb-2">PPP &amp; Investment Readiness</h3>
+        <p class="text-sm leading-relaxed text-white/70">PPP screening, bankability logic, project preparation support, risk allocation, value-for-money framing and investment narratives.</p>
+      </div>
+
+      <!-- ESG &amp; Social Impact Delivery -->
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-piggy-bank"></i></div>
+        <h3 class="font-bold text-base text-gray-900 mb-2">ESG &amp; Social Impact Delivery</h3>
+        <p class="text-sm leading-relaxed" style="color:var(--text-muted);">ESG-aligned project framing, inclusion, safeguarding, social value, climate resilience and community-sensitive infrastructure.</p>
+      </div>
+
+      <!-- Incorporation & Dissolution -->
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-file-contract"></i></div>
+        <h3 class="font-bold text-base text-gray-900 mb-2">Urban Systems &amp; Public Services</h3>
+        <p class="text-sm leading-relaxed" style="color:var(--text-muted);">Water, sanitation, energy access, health facilities, public utilities and service delivery systems for fast-growing cities.</p>
+      </div>
+
+      <!-- Partnership LLC/LLP -->
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-handshake"></i></div>
+        <h3 class="font-bold text-base text-gray-900 mb-2">AI/Data-enabled Delivery Systems</h3>
+        <p class="text-sm leading-relaxed" style="color:var(--text-muted);">Dashboards, project intelligence, automation, responsible AI adoption, reporting systems and institutional knowledge management.</p>
+      </div>
+
+      <!-- Institutional Reform &amp; Capacity Building -->
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-receipt"></i></div>
+        <h3 class="font-bold text-base text-gray-900 mb-2">Institutional Reform &amp; Capacity Building</h3>
+        <p class="text-sm leading-relaxed" style="color:var(--text-muted);">Delivery routines, leadership systems, training academies, procurement governance, workflow improvement and change management.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     WHY CHOOSE SECTION
+════════════════════════════════════════ -->
+<section class="py-16 md:py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+
+      <!-- Left: Photo -->
+      <div class="rounded-2xl overflow-hidden" style="height:420px;">
+        <!-- REPLACE SRC with real why-choose photo -->
+        <img
+          src="awards-min-653x1024.png"
+          alt="Philip A. Balogun — professional advisory profile"
+          class="w-full h-full object-cover object-top"
+        />
+      </div>
+
+      <!-- Right: Content -->
+      <div>
+        <span class="section-label">Why Philip?</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 leading-tight mb-8">
+          Why Work With <span style="color:var(--accent);">Philip</span>?
+        </h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-9">
+
+          <div class="why-point">
+            <div class="why-icon"><i class="fas fa-certificate"></i></div>
+            <div>
+              <h4 class="font-bold text-sm text-gray-900 mb-1">Field-tested + Strategic</h4>
+              <p class="text-xs leading-relaxed" style="color:var(--text-muted);">Bridges boardroom strategy with field-level implementation in complex environments.</p>
+            </div>
+          </div>
+
+          <div class="why-point">
+            <div class="why-icon"><i class="fas fa-scale-balanced"></i></div>
+            <div>
+              <h4 class="font-bold text-sm text-gray-900 mb-1">Public Value Lens</h4>
+              <p class="text-xs leading-relaxed" style="color:var(--text-muted);">Frames infrastructure as dignity, resilience, access, efficiency and institutional performance.</p>
+            </div>
+          </div>
+
+          <div class="why-point">
+            <div class="why-icon"><i class="fas fa-user-tie"></i></div>
+            <div>
+              <h4 class="font-bold text-sm text-gray-900 mb-1">Project Governance Strength</h4>
+              <p class="text-xs leading-relaxed" style="color:var(--text-muted);">Connects procurement, risk, quality, contractors, reporting and stakeholder confidence.</p>
+            </div>
+          </div>
+
+          <div class="why-point">
+            <div class="why-icon"><i class="fas fa-landmark"></i></div>
+            <div>
+              <h4 class="font-bold text-sm text-gray-900 mb-1">Executive Facilitation</h4>
+              <p class="text-xs leading-relaxed" style="color:var(--text-muted);">Designs practical learning experiences for public servants, project teams and institutional leaders.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <button class="btn-primary">
+          Work with Philip
+          <i class="fas fa-arrow-right text-xs"></i>
+        </button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     INDUSTRIES SERVED
+════════════════════════════════════════ -->
+<section class="py-12 bg-sage">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <h2 class="text-xl font-bold text-center text-gray-900 mb-7">Sectors &amp; Systems Served</h2>
+    <div class="industries-track justify-start lg:justify-center">
+      <div class="industry-pill">
+        <div class="pill-icon"><i class="fas fa-shopping-cart"></i></div>
+        Government &amp; Public Institutions
+      </div>
+      <div class="industry-pill">
+        <div class="pill-icon"><i class="fas fa-home"></i></div>
+        Development &amp; Donor Programmes
+      </div>
+      <div class="industry-pill">
+        <div class="pill-icon"><i class="fas fa-store"></i></div>
+        Water, Sanitation &amp; Public Health
+      </div>
+      <div class="industry-pill">
+        <div class="pill-icon"><i class="fas fa-rocket"></i></div>
+        Energy, Utilities &amp; Urban Systems
+      </div>
+      <div class="industry-pill">
+        <div class="pill-icon"><i class="fas fa-user-tie"></i></div>
+        Training &amp; Executive Learning
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     CLIENT PORTFOLIO LOGO MARQUEE
+════════════════════════════════════════ -->
+<section id="client-portfolio" class="py-16 md:py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+
+    <!-- Header -->
+    <div class="text-center mb-12">
+      <span class="section-label justify-center mx-auto">Client Portfolio</span>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900">
+        Organisations <span style="color:var(--accent);">Worked With</span>
+      </h2>
+      <p class="mt-2 text-sm max-w-2xl mx-auto" style="color:var(--text-muted);">
+        Selected institutions, programmes, ministries and organisations connected to Philip’s infrastructure, advisory, training and public-value delivery portfolio.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-[1fr_280px] gap-6 items-stretch">
+
+      <!-- Logo Marquee -->
+      <div class="logo-marquee-shell">
+        <div class="logo-marquee-track" aria-label="Client and partner logo marquee">
+
+          <!-- First set -->
+          <div class="logo-item">
+            <img src="images/logos/icrc.png" alt="International Committee of the Red Cross logo" loading="lazy" />
+            <span>ICRC</span>
+          </div>
+          <div class="logo-item">
+            <img src="images/logos/mercy-corps.png" alt="Mercy Corps logo" loading="lazy" />
+            <span>Mercy Corps</span>
+          </div>
+          <div class="logo-item">
+            <img src="images/logos/pa-consulting.png" alt="P&amp;A Consulting Limited logo" loading="lazy" />
+            <span>P&amp;A Consulting</span>
+          </div>
+          <div class="logo-item">
+            <img src="images/logos/3p-consulting.png" alt="3P Consulting logo" loading="lazy" />
+            <span>3P Consulting</span>
+          </div>
+          <div class="logo-item">
+            <img src="images/logos/federal-ministry-health.png" alt="Federal Ministry of Health and Social Welfare logo" loading="lazy" />
+            <span>Federal Ministry of Health</span>
+          </div>
+          <div class="logo-item">
+            <img src="images/logos/abia-state.png" alt="Abia State Government logo" loading="lazy" />
+            <span>Abia State Government</span>
+          </div>
+          <div class="logo-item">
+            <img src="images/logos/nigerian-military.png" alt="Nigerian Military logo" loading="lazy" />
+            <span>Nigerian Military</span>
+          </div>
+          <div class="logo-item">
+            <img src="images/logos/bank-of-industry.png" alt="Bank of Industry logo" loading="lazy" />
+            <span>Bank of Industry</span>
+          </div>
+          <div class="logo-item">
+            <img src="images/logos/ehealth-africa.png" alt="eHealth Africa logo" loading="lazy" />
+            <span>eHealth Africa</span>
+          </div>
+          <div class="logo-item">
+            <img src="images/logos/wateraid.png" alt="WaterAid logo" loading="lazy" />
+            <span>WaterAid</span>
+          </div>
+
+          <!-- Duplicate set for seamless marquee loop -->
+          <div class="logo-item" aria-hidden="true">
+            <img src="images/logos/icrc.png" alt="" loading="lazy" />
+            <span>ICRC</span>
+          </div>
+          <div class="logo-item" aria-hidden="true">
+            <img src="images/logos/mercy-corps.png" alt="" loading="lazy" />
+            <span>Mercy Corps</span>
+          </div>
+          <div class="logo-item" aria-hidden="true">
+            <img src="images/logos/pa-consulting.png" alt="" loading="lazy" />
+            <span>P&amp;A Consulting</span>
+          </div>
+          <div class="logo-item" aria-hidden="true">
+            <img src="images/logos/3p-consulting.png" alt="" loading="lazy" />
+            <span>3P Consulting</span>
+          </div>
+          <div class="logo-item" aria-hidden="true">
+            <img src="images/logos/federal-ministry-health.png" alt="" loading="lazy" />
+            <span>Federal Ministry of Health</span>
+          </div>
+          <div class="logo-item" aria-hidden="true">
+            <img src="images/logos/abia-state.png" alt="" loading="lazy" />
+            <span>Abia State Government</span>
+          </div>
+          <div class="logo-item" aria-hidden="true">
+            <img src="images/logos/nigerian-military.png" alt="" loading="lazy" />
+            <span>Nigerian Military</span>
+          </div>
+          <div class="logo-item" aria-hidden="true">
+            <img src="images/logos/bank-of-industry.png" alt="" loading="lazy" />
+            <span>Bank of Industry</span>
+          </div>
+          <div class="logo-item" aria-hidden="true">
+            <img src="images/logos/ehealth-africa.png" alt="" loading="lazy" />
+            <span>eHealth Africa</span>
+          </div>
+          <div class="logo-item" aria-hidden="true">
+            <img src="images/logos/wateraid.png" alt="" loading="lazy" />
+            <span>WaterAid</span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Proof Card -->
+      <div class="logo-proof-card flex flex-col justify-between">
+        <div>
+          <span class="text-[11px] uppercase tracking-[.18em] font-bold" style="color:rgba(255,255,255,.55);">Selected reach</span>
+          <h3 class="text-2xl font-extrabold leading-tight mt-3 mb-3">Public + private + humanitarian systems</h3>
+          <p class="text-sm leading-7" style="color:rgba(255,255,255,.66);">
+            Experience spanning field delivery, institutional coordination, advisory, training, public systems, donor programmes and infrastructure transformation.
+          </p>
+        </div>
+        <div class="pt-6 mt-6 border-t border-white/10">
+          <p class="text-xs font-semibold" style="color:rgba(255,255,255,.55);">Logo assets wired from</p>
+          <p class="text-sm font-bold text-white mt-1">images/logos/</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ════════════════════════════════════════
+     MASONRY FILTER GALLERY
+════════════════════════════════════════ -->
+<section id="gallery" class="py-16 md:py-24 bg-sage">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+
+    <!-- Header -->
+    <div class="text-center mb-10">
+      <span class="section-label justify-center mx-auto">Gallery</span>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900">
+        Delivery <span style="color:var(--accent);">Gallery</span>
+      </h2>
+      <p class="mt-2 text-sm max-w-2xl mx-auto" style="color:var(--text-muted);">
+        A visual portfolio of field delivery, institutional engagement, training, advisory work and public-value systems.
+      </p>
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="flex flex-wrap justify-center gap-3 mb-10" data-gallery-filters>
+      <button class="gallery-filter active" type="button" data-gallery-filter="all">
+        <i class="fas fa-layer-group"></i> All
+      </button>
+      <button class="gallery-filter" type="button" data-gallery-filter="infrastructure">
+        <i class="fas fa-helmet-safety"></i> Infrastructure
+      </button>
+      <button class="gallery-filter" type="button" data-gallery-filter="training">
+        <i class="fas fa-chalkboard-user"></i> Training
+      </button>
+    </div>
+
+    <!-- Masonry Grid -->
+    <div class="gallery-masonry" id="portfolio-gallery">
+
+      <article class="gallery-card" data-gallery-card tabindex="0" role="button" data-category="infrastructure">
+        <div class="gallery-image-wrap" style="height: 330px;">
+          <img src="images/infrastructure/infrastructure-01.jpg" alt="Abia State infrastructure development" loading="lazy" />
+          <span class="gallery-badge"><i class="fas fa-helmet-safety"></i> Infrastructure</span>
+        </div>
+        <div class="gallery-caption">
+          <h3>Abia State Infrastructure</h3>
+          <p>Infrastructure delivery for Abia State, showcasing systems, projects and state-level public-value delivery.</p>
+        </div>
+      </article>
+
+      <article class="gallery-card" data-gallery-card tabindex="0" role="button" data-category="training"
+               data-images='["images/ministry of health/DSC01785.jpg","images/ministry of health/DSC01789.jpg","images/ministry of health/DSC01806.jpg","images/ministry of health/DSC01813.jpg","images/ministry of health/DSC01825.jpg","images/ministry of health/DSC01828.jpg","images/ministry of health/DSC01853.jpg","images/ministry of health/DSC01863.jpg","images/ministry of health/DSC01934.jpg","images/ministry of health/DSC01935.jpg","images/ministry of health/DSC01975.jpg","images/ministry of health/DSC01978.jpg","images/ministry of health/DSC02012.jpg","images/ministry of health/DSC02019.jpg","images/ministry of health/DSC02024.jpg","images/ministry of health/DSC02025.jpg","images/ministry of health/DSC02033.jpg","images/ministry of health/DSC02036.jpg","images/ministry of health/DSC02057.jpg","images/ministry of health/DSC02072.jpg","images/ministry of health/DSC02081.jpg","images/ministry of health/DSC02082.jpg","images/ministry of health/DSC02088.jpg","images/ministry of health/DSC02100.jpg","images/ministry of health/DSC02103.jpg","images/ministry of health/DSC02107.jpg","images/ministry of health/DSC02130.jpg","images/ministry of health/DSC02131.jpg","images/ministry of health/DSC02140.jpg","images/ministry of health/DSC02156.jpg","images/ministry of health/DSC02166.jpg","images/ministry of health/DSC02169.jpg","images/ministry of health/DSC02183.jpg","images/ministry of health/DSC02198.jpg"]'>
+        <div class="gallery-image-wrap" style="height: 320px;">
+          <img src="images/ministry of health/DSC01935(1).jpg" alt="Ministry of Health — training thumbnail" loading="lazy" />
+          <span class="gallery-badge"><i class="fas fa-chalkboard-user"></i> Ministry of Health</span>
+        </div>
+        <div class="gallery-caption">
+          <h3>Ministry of Health — Capacity Strengthening</h3>
+          <p>Click to view the full retreat gallery for the Federal Ministry of Health.</p>
+        </div>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- Gallery Lightbox -->
+<div class="portfolio-lightbox" id="gallery-lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Portfolio gallery viewer">
+  <div class="lightbox-panel" data-lightbox-panel>
+    <div class="lightbox-image-stage">
+      <button class="lightbox-close" type="button" data-lightbox-close aria-label="Close gallery viewer">
+        <i class="fas fa-times"></i>
+      </button>
+      <button class="lightbox-arrow lightbox-prev" type="button" data-lightbox-prev aria-label="Previous image">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <img src="" alt="" data-lightbox-image />
+      <button class="lightbox-arrow lightbox-next" type="button" data-lightbox-next aria-label="Next image">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+    <div class="lightbox-info">
+      <span class="lightbox-kicker" data-lightbox-category><i class="fas fa-layer-group"></i> Portfolio</span>
+      <h3 data-lightbox-title></h3>
+      <p data-lightbox-caption></p>
+      <div class="lightbox-counter" data-lightbox-counter></div>
+      <div class="lightbox-thumbs" data-lightbox-thumbs aria-label="Gallery thumbnails"></div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- ════════════════════════════════════════
+     PUBLICATIONS & RESEARCH
+════════════════════════════════════════ -->
+<section id="publications" class="py-16 md:py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+
+    <!-- Header -->
+    <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-5 mb-12">
+      <div>
+        <span class="section-label">Publications &amp; Research</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 leading-tight">
+          Knowledge <span style="color:var(--accent);">Assets</span>
+        </h2>
+        <p class="mt-2 text-sm max-w-2xl" style="color:var(--text-muted);">
+          Research, reports and thought-leadership materials on infrastructure finance, public value, social protection, institutional delivery and emerging-market systems.
+        </p>
+      </div>
+      <div class="publication-tag">
+        <i class="fas fa-book-open"></i> Reports · Briefs · Research
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+
+      <article class="publication-card">
+        <div class="publication-meta"><i class="fas fa-calendar-alt"></i> December 2025</div>
+        <h3 class="text-xl font-extrabold text-gray-900 leading-tight mb-3">
+          Private Sector Investment in Social Protection and Infrastructure Service Delivery in Nigeria
+        </h3>
+        <p class="text-sm leading-7 mb-6" style="color:var(--text-muted);">
+          A featured research anchor for infrastructure finance, public-private delivery, social protection, impact investment and public-value systems in Nigeria.
+        </p>
+        <a class="publication-link" href="https://infraspotlight.com/wp-content/uploads/2025/12/CSG-Report-Infraspotlight.pdf" target="_blank" rel="noopener noreferrer">
+          View Publication <i class="fas fa-arrow-up-right-from-square text-xs"></i>
+        </a>
+      </article>
+
+      <article class="publication-card">
+        <div class="publication-meta"><i class="fas fa-calendar-alt"></i> Forthcoming</div>
+        <h3 class="text-xl font-extrabold text-gray-900 leading-tight mb-3">
+          Public Value Delivery Notes
+        </h3>
+        <p class="text-sm leading-7 mb-6" style="color:var(--text-muted);">
+          A planned insight series on infrastructure transformation, institutional reform, ESG, PPP readiness, AI-enabled delivery and resilient public systems.
+        </p>
+        <a class="publication-link" href="#" aria-disabled="true" onclick="return false;">
+          Coming Soon <i class="fas fa-clock text-xs"></i>
+        </a>
+      </article>
+
+      <article class="publication-card">
+        <div class="publication-meta"><i class="fas fa-calendar-alt"></i> Forthcoming</div>
+        <h3 class="text-xl font-extrabold text-gray-900 leading-tight mb-3">
+          AI for Public Project Delivery
+        </h3>
+        <p class="text-sm leading-7 mb-6" style="color:var(--text-muted);">
+          A future practice note on dashboards, risk visibility, institutional memory, reporting systems and responsible AI adoption for project teams.
+        </p>
+        <a class="publication-link" href="#" aria-disabled="true" onclick="return false;">
+          Coming Soon <i class="fas fa-clock text-xs"></i>
+        </a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     FAQ SECTION
+════════════════════════════════════════ -->
+<section class="py-16 md:py-24 bg-sage">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+
+      <!-- Left: Heading -->
+      <div>
+        <span class="section-label">Advisory Questions</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 leading-tight">
+          Frequently Asked <span style="color:var(--accent);">Questions</span>
+        </h2>
+        <p class="mt-4 text-sm leading-relaxed" style="color:var(--text-muted);">
+          Common questions about Philip’s advisory, training and public-value delivery work.
+        </p>
+      </div>
+
+      <!-- Right: Accordion -->
+      <div class="space-y-3">
+
+        <div class="faq-item bg-white" data-faq>
+          <button class="faq-trigger" type="button">
+            <span class="text-sm font-semibold text-gray-800 pr-4">What kind of advisory work does Philip support?</span>
+            <i class="fas fa-chevron-down faq-chevron text-xs flex-shrink-0"></i>
+          </button>
+          <div class="faq-body">
+            <div class="faq-body-inner text-sm leading-relaxed" style="color:var(--text-muted);">
+              Philip supports infrastructure transformation, PPP and investment readiness, ESG and social impact delivery, urban systems, AI/data-enabled project delivery, institutional reform, training and executive facilitation.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item bg-white" data-faq>
+          <button class="faq-trigger" type="button">
+            <span class="text-sm font-semibold text-gray-800 pr-4">What makes this portfolio different from a conventional engineering profile?</span>
+            <i class="fas fa-chevron-down faq-chevron text-xs flex-shrink-0"></i>
+          </button>
+          <div class="faq-body">
+            <div class="faq-body-inner text-sm leading-relaxed" style="color:var(--text-muted);">
+              The portfolio is positioned around public-value systems, not only engineering outputs. It connects infrastructure with policy, finance, ESG, technology, institutional capacity, procurement, risk and field delivery.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item bg-white" data-faq>
+          <button class="faq-trigger" type="button">
+            <span class="text-sm font-semibold text-gray-800 pr-4">Who is the ideal audience for this work?</span>
+            <i class="fas fa-chevron-down faq-chevron text-xs flex-shrink-0"></i>
+          </button>
+          <div class="faq-body">
+            <div class="faq-body-inner text-sm leading-relaxed" style="color:var(--text-muted);">
+              The ideal audience includes governments, development institutions, consulting firms, donors, private-sector actors, foundations, public agencies and public-value organisations seeking practical delivery leadership.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item bg-white" data-faq>
+          <button class="faq-trigger" type="button">
+            <span class="text-sm font-semibold text-gray-800 pr-4">What are the strongest proof areas?</span>
+            <i class="fas fa-chevron-down faq-chevron text-xs flex-shrink-0"></i>
+          </button>
+          <div class="faq-body">
+            <div class="faq-body-inner text-sm leading-relaxed" style="color:var(--text-muted);">
+              Humanitarian infrastructure, water and sanitation systems, public-sector capacity building, procurement and contract governance, PPP readiness, ESG-aligned delivery, risk management, training and digital project environments.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item bg-white" data-faq>
+          <button class="faq-trigger" type="button">
+            <span class="text-sm font-semibold text-gray-800 pr-4">Can Philip support speaking, training and facilitation?</span>
+            <i class="fas fa-chevron-down faq-chevron text-xs flex-shrink-0"></i>
+          </button>
+          <div class="faq-body">
+            <div class="faq-body-inner text-sm leading-relaxed" style="color:var(--text-muted);">
+              Yes. The profile includes practical training design, executive facilitation, simulations, project management learning, public-sector delivery routines, digital tools and institutional capacity strengthening.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     CTA BANNER
+════════════════════════════════════════ -->
+<section id="cta" class="py-12 md:py-16 bg-white">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="cta-banner-bg p-10 md:p-14 overflow-hidden">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+
+        <!-- Left: Copy -->
+        <div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-4">
+            Ready to Convert Infrastructure Ambition into Public Value?
+          </h2>
+          <p class="text-sm leading-relaxed mb-8" style="color:rgba(255,255,255,.65);">
+            For advisory engagements, speaking invitations, training programmes and partnerships across infrastructure, PPP, ESG, urban systems, AI/data-enabled delivery and institutional reform.
+          </p>
+          <button class="btn-primary">
+            <i class="fas fa-calendar-check text-xs"></i>
+            Start a Conversation
+          </button>
+        </div>
+
+        <!-- Right: Photo -->
+        <div class="hidden lg:flex justify-end">
+          <div class="rounded-2xl overflow-hidden" style="width:260px; height:300px;">
+            <!-- REPLACE SRC with real CTA photo -->
+            <img
+              src="DSC01825.jpg"
+              alt="Philip A. Balogun — advisory engagement"
+              class="w-full h-full object-cover object-top"
+            />
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     CONTACT SECTION
+════════════════════════════════════════ -->
+<section id="contact" class="py-16 md:py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="contact-card fade-up">
+      <div class="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-10 items-start">
+        <div>
+          <span class="section-label">Contact</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 leading-tight mb-3">
+            Reach out for advisory, training or project delivery support.
+          </h2>
+          <p class="text-sm leading-relaxed">
+            Send a message to Philip with your name, email and a short note. Your request will be prepared for follow-up immediately.
+          </p>
+        </div>
+
+        <div class="rounded-3xl overflow-hidden" style="background:linear-gradient(135deg, rgba(62,158,114,.12), rgba(29,45,38,.02)); min-height: 260px; padding: 1.25rem;">
+          <div class="text-sm font-semibold text-forest mb-2">Contact details</div>
+          <p class="text-sm text-gray-700 leading-relaxed">Email:</p>
+          <p class="text-sm font-bold text-gray-900 mb-4">philip@philipbalogun.com</p>
+          <p class="text-sm text-gray-700 leading-relaxed">Available for advisory, training, infrastructure delivery and public value engagements.</p>
+        </div>
+      </div>
+
+      <form id="contact-form" class="mt-10" novalidate>
+        <div class="contact-grid">
+          <label class="block">
+            <span class="sr-only">Full Name</span>
+            <input class="contact-field" type="text" id="contact-name" name="name" placeholder="Full Name" required />
+          </label>
+          <label class="block">
+            <span class="sr-only">Email</span>
+            <input class="contact-field" type="email" id="contact-email" name="email" placeholder="Email address" required />
+          </label>
+          <label class="block" style="grid-column: 1 / -1;">
+            <span class="sr-only">Message</span>
+            <textarea class="contact-field" id="contact-message" name="message" placeholder="Your message" rows="6" required></textarea>
+          </label>
+        </div>
+        <div class="contact-submit-wrap">
+          <button class="btn-primary" type="submit">
+            <i class="fas fa-paper-plane text-xs"></i>
+            Send Message
+          </button>
+        </div>
+        <div class="form-notice" id="contact-notice" aria-live="polite"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════ -->
+<footer class="bg-forest-deep py-14 md:py-16">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+
+      <!-- Brand Column -->
+      <div class="lg:col-span-2">
+        <div class="flex items-center gap-2.5 mb-4">
+          <div class="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0" style="background:var(--accent);">
+            <i class="fas fa-chart-pie text-white text-xs"></i>
+          </div>
+          <div class="leading-tight">
+            <span class="text-white font-bold text-sm block">Philip A.</span>
+            <span class="text-xs block" style="color:rgba(255,255,255,.4); margin-top:-2px;">Balogun</span>
+          </div>
+        </div>
+        <p class="text-sm leading-7 mb-6 max-w-xs" style="color:rgba(255,255,255,.48);">
+          Designing delivery systems for resilient infrastructure, stronger institutions and sustainable public outcomes.
+        </p>
+        <div class="flex gap-2">
+          <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <!-- Pages -->
+      <div>
+        <h5 class="text-white text-sm font-bold mb-4">Pages</h5>
+        <ul class="space-y-2.5">
+          <li><a href="#" class="footer-link">Home</a></li>
+          <li><a href="#" class="footer-link">About Philip</a></li>
+          <li><a href="#" class="footer-link">Advisory</a></li>
+          <li><a href="#" class="footer-link">Portfolio</a></li>
+          <li><a href="#" class="footer-link">Speaking &amp; Training</a></li>
+        </ul>
+      </div>
+
+      <!-- Resources -->
+      <div>
+        <h5 class="text-white text-sm font-bold mb-4">Resources</h5>
+        <ul class="space-y-2.5">
+          <li><a href="#" class="footer-link">Insights &amp; Articles</a></li>
+          <li><a href="#" class="footer-link">Case Studies</a></li>
+          <li><a href="#" class="footer-link">Contact Philip</a></li>
+          <li><a href="#" class="footer-link">Frameworks</a></li>
+        </ul>
+      </div>
+
+      <!-- Company -->
+      <div>
+        <h5 class="text-white text-sm font-bold mb-4">Company</h5>
+        <ul class="space-y-2.5">
+          <li><a href="#" class="footer-link">Privacy Policy</a></li>
+          <li><a href="#" class="footer-link">Terms of Use</a></li>
+          <li><a href="#" class="footer-link">Accessibility</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="pt-7 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3" style="border-top:1px solid rgba(255,255,255,.1);">
+      <p class="text-xs" style="color:rgba(255,255,255,.35);">© 2026 Philip A. Balogun. All rights reserved.</p>
+      <p class="text-xs" style="color:rgba(255,255,255,.3);">Infrastructure Transformation · Public Value Delivery · Institutional Reform</p>
+    </div>
+
+  </div>
+</footer>
+
+
+<!-- ════════════════════════════════════════
+     JAVASCRIPT
+════════════════════════════════════════ -->
+<script>
+  /* ─── Mobile Menu Toggle ─── */
+  const menuBtn  = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuBtn.addEventListener('click', () => {
+    const open = !mobileMenu.classList.contains('hidden');
+    mobileMenu.classList.toggle('hidden', open);
+    menuBtn.innerHTML = open
+      ? '<i class="fas fa-bars text-lg"></i>'
+      : '<i class="fas fa-times text-lg"></i>';
+  });
+
+  /* ─── Smooth-close mobile menu on link click ─── */
+  mobileMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+      menuBtn.innerHTML = '<i class="fas fa-bars text-lg"></i>';
+    });
+  });
+
+  /* ─── Active nav on scroll ─── */
+  const sections  = document.querySelectorAll('section[id]');
+  const navLinks  = document.querySelectorAll('a.nav-link');
+
+  function setActiveNav() {
+    let current = '';
+    sections.forEach(sec => {
+      if (window.scrollY + 90 >= sec.offsetTop) current = sec.id;
+    });
+    navLinks.forEach(link => {
+      link.classList.toggle('active', link.getAttribute('href') === `#${current}`);
+    });
+  }
+
+  window.addEventListener('scroll', setActiveNav, { passive: true });
+  setActiveNav();
+
+  /* ─── FAQ Accordion ─── */
+  document.querySelectorAll('[data-faq]').forEach(item => {
+    const trigger = item.querySelector('.faq-trigger');
+    const body    = item.querySelector('.faq-body');
+
+    trigger.addEventListener('click', () => {
+      const isOpen = item.classList.contains('open');
+
+      // Close all
+      document.querySelectorAll('[data-faq]').forEach(i => {
+        i.classList.remove('open');
+        i.querySelector('.faq-body').style.maxHeight = null;
+      });
+
+      // Open clicked (if it was closed)
+      if (!isOpen) {
+        item.classList.add('open');
+        body.style.maxHeight = body.scrollHeight + 'px';
+      }
+    });
+  });
+
+  /* ─── Service card click ─── */
+  document.querySelectorAll('.service-card:not(.featured)').forEach(card => {
+    card.addEventListener('click', () => {
+      document.querySelectorAll('.service-card:not(.featured)').forEach(c => c.style.borderColor = '');
+      card.style.borderColor = 'var(--accent)';
+      card.style.boxShadow   = '0 8px 30px rgba(62,158,114,.18)';
+    });
+  });
+
+
+  /* ─── Masonry Gallery Filter + Lightbox ─── */
+  const galleryFilterButtons = document.querySelectorAll('[data-gallery-filter]');
+  const galleryCards = Array.from(document.querySelectorAll('[data-gallery-card]'));
+
+  const lightbox = document.getElementById('gallery-lightbox');
+  const lightboxPanel = document.querySelector('[data-lightbox-panel]');
+  const lightboxImage = document.querySelector('[data-lightbox-image]');
+  const lightboxCategory = document.querySelector('[data-lightbox-category]');
+  const lightboxTitle = document.querySelector('[data-lightbox-title]');
+  const lightboxCaption = document.querySelector('[data-lightbox-caption]');
+  const lightboxCounter = document.querySelector('[data-lightbox-counter]');
+  const lightboxThumbs = document.querySelector('[data-lightbox-thumbs]');
+  const lightboxClose = document.querySelector('[data-lightbox-close]');
+  const lightboxPrev = document.querySelector('[data-lightbox-prev]');
+  const lightboxNext = document.querySelector('[data-lightbox-next]');
+
+  let activeGalleryFilter = 'all';
+  let activeLightboxItems = [];
+  let activeLightboxIndex = 0;
+
+  function getCardData(card) {
+    const image = card.querySelector('img');
+    const title = card.querySelector('.gallery-caption h3');
+    const caption = card.querySelector('.gallery-caption p');
+    const badge = card.querySelector('.gallery-badge');
+
+    return {
+      card,
+      src: image ? image.getAttribute('src') : '',
+      alt: image ? image.getAttribute('alt') : '',
+      title: title ? title.textContent.trim() : 'Portfolio Image',
+      caption: caption ? caption.textContent.trim() : '',
+      category: badge ? badge.textContent.trim() : card.dataset.category || 'Portfolio',
+      categoryKey: card.dataset.category || 'all'
+    };
+  }
+
+  function getActiveLightboxItems(clickedCard) {
+    // If the clicked card contains an explicit list of image srcs (data-images),
+    // use those images as the lightbox set (this enables folder-level galleries).
+    if (clickedCard.dataset && clickedCard.dataset.images) {
+      let imgs = [];
+      try {
+        imgs = JSON.parse(clickedCard.dataset.images);
+      } catch (e) {
+        imgs = clickedCard.dataset.images.split(',').map(s => s.trim()).filter(Boolean);
+      }
+
+      const defaultAlt = clickedCard.querySelector('.gallery-caption h3')?.textContent.trim() || 'Gallery image';
+      return imgs.map(src => ({
+        card: clickedCard,
+        src: src,
+        alt: defaultAlt,
+        title: clickedCard.querySelector('.gallery-caption h3')?.textContent.trim() || 'Gallery',
+        caption: clickedCard.querySelector('.gallery-caption p')?.textContent.trim() || '',
+        category: clickedCard.dataset.category || 'training',
+        categoryKey: clickedCard.dataset.category || 'training'
+      }));
+    }
+
+    const clickedCategory = clickedCard.dataset.category;
+    // When the visitor is viewing “All”, keep the lightbox focused on the clicked card's section.
+    // When a filter is active, move only through that active filtered section.
+    const group = activeGalleryFilter === 'all' ? clickedCategory : activeGalleryFilter;
+
+    return galleryCards
+      .filter(card => card.dataset.category === group)
+      .map(getCardData);
+  }
+
+  function renderLightbox(index) {
+    if (!activeLightboxItems.length) return;
+
+    activeLightboxIndex = (index + activeLightboxItems.length) % activeLightboxItems.length;
+    const item = activeLightboxItems[activeLightboxIndex];
+
+    lightboxImage.src = item.src;
+    lightboxImage.alt = item.alt;
+    lightboxCategory.innerHTML = `<i class="fas fa-layer-group"></i> ${item.category}`;
+    lightboxTitle.textContent = item.title;
+    lightboxCaption.textContent = item.caption;
+    lightboxCounter.textContent = `${activeLightboxIndex + 1} of ${activeLightboxItems.length}`;
+
+    lightboxThumbs.innerHTML = '';
+    activeLightboxItems.forEach((thumbItem, thumbIndex) => {
+      const thumbButton = document.createElement('button');
+      thumbButton.type = 'button';
+      thumbButton.className = `lightbox-thumb${thumbIndex === activeLightboxIndex ? ' active' : ''}`;
+      thumbButton.setAttribute('aria-label', `Open image ${thumbIndex + 1}`);
+      thumbButton.innerHTML = `<img src="${thumbItem.src}" alt="${thumbItem.alt}" />`;
+      thumbButton.addEventListener('click', () => renderLightbox(thumbIndex));
+      lightboxThumbs.appendChild(thumbButton);
+    });
+
+    const activeThumb = lightboxThumbs.querySelector('.lightbox-thumb.active');
+    if (activeThumb) activeThumb.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' });
+  }
+
+  function openLightbox(card) {
+    activeLightboxItems = getActiveLightboxItems(card);
+    activeLightboxIndex = activeLightboxItems.findIndex(item => item.card === card);
+    if (activeLightboxIndex < 0) activeLightboxIndex = 0;
+
+    renderLightbox(activeLightboxIndex);
+    lightbox.classList.add('open');
+    lightbox.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('lightbox-open');
+    lightboxClose.focus();
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove('open');
+    lightbox.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('lightbox-open');
+  }
+
+  function showPreviousImage() { renderLightbox(activeLightboxIndex - 1); }
+  function showNextImage() { renderLightbox(activeLightboxIndex + 1); }
+
+  /* ─── Contact form_submit handler ─── */
+  const contactForm = document.getElementById('contact-form');
+  const contactNotice = document.getElementById('contact-notice');
+
+  if (contactForm) {
+    contactForm.addEventListener('submit', event => {
+      event.preventDefault();
+      const name = document.getElementById('contact-name').value.trim();
+      const email = document.getElementById('contact-email').value.trim();
+      const message = document.getElementById('contact-message').value.trim();
+
+      if (!name || !email || !message) {
+        contactNotice.textContent = 'Please complete all fields before sending.';
+        return;
+      }
+
+      const subject = encodeURIComponent('Contact from website — ' + name);
+      const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
+      window.location.href = `mailto:philip@philipbalogun.com?subject=${subject}&body=${body}`;
+      contactNotice.textContent = 'Opening your mail client now...';
+    });
+  }
+
+  galleryFilterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const filter = button.dataset.galleryFilter;
+      activeGalleryFilter = filter;
+
+      galleryFilterButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+
+      galleryCards.forEach(card => {
+        const matchesFilter = filter === 'all' || card.dataset.category === filter;
+        card.classList.toggle('gallery-hidden', !matchesFilter);
+
+        if (matchesFilter) {
+          card.style.opacity = '1';
+          card.style.transform = 'none';
+        }
+      });
+    });
+  });
+
+  galleryCards.forEach(card => {
+    card.addEventListener('click', () => openLightbox(card));
+    card.addEventListener('keydown', event => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        openLightbox(card);
+      }
+    });
+  });
+
+  lightboxClose.addEventListener('click', closeLightbox);
+  lightboxPrev.addEventListener('click', showPreviousImage);
+  lightboxNext.addEventListener('click', showNextImage);
+
+  lightbox.addEventListener('click', event => {
+    if (event.target === lightbox) closeLightbox();
+  });
+
+  document.addEventListener('keydown', event => {
+    if (!lightbox.classList.contains('open')) return;
+
+    if (event.key === 'Escape') closeLightbox();
+    if (event.key === 'ArrowLeft') showPreviousImage();
+    if (event.key === 'ArrowRight') showNextImage();
+  });
+
+  let lightboxTouchStartX = 0;
+  lightboxPanel.addEventListener('touchstart', event => {
+    lightboxTouchStartX = event.changedTouches[0].clientX;
+  }, { passive: true });
+
+  lightboxPanel.addEventListener('touchend', event => {
+    const touchEndX = event.changedTouches[0].clientX;
+    const swipeDistance = touchEndX - lightboxTouchStartX;
+
+    if (Math.abs(swipeDistance) > 50) {
+      swipeDistance > 0 ? showPreviousImage() : showNextImage();
+    }
+  }, { passive: true });
+
+  /* ─── Intersection Observer for scroll-fade-up ─── */
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'none';
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll('.service-card, .testi-card, .why-point, .faq-item, .industry-pill, .gallery-card, .logo-item, .publication-card').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(18px)';
+    el.style.transition = 'opacity .45s ease, transform .45s ease';
+    observer.observe(el);
+  });
+</script>
+
+</body>
+</html>
