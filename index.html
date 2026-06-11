@@ -763,6 +763,95 @@
     @media (max-width: 480px) {
       .hero-photo { width: 220px; height: 300px; }
     }
+
+
+    /* ─── PROFILE-CONSISTENT NAV + CONTACT POLISH ─── */
+    section[id] { scroll-margin-top: 88px; }
+
+    .brand-mark {
+      width: 34px;
+      height: 34px;
+      border-radius: 999px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, var(--accent), #2E7D58);
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .16), 0 8px 18px rgba(0, 0, 0, .18);
+      color: #fff;
+      font-size: .72rem;
+      font-weight: 800;
+      letter-spacing: -.04em;
+      flex-shrink: 0;
+    }
+
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: transparent;
+      color: var(--forest);
+      font-weight: 700;
+      font-size: .875rem;
+      font-family: inherit;
+      padding: 10px 22px;
+      border-radius: 50px;
+      border: 1.5px solid var(--border-light);
+      cursor: pointer;
+      transition: all .2s;
+      text-decoration: none;
+    }
+
+    .btn-outline:hover {
+      background: var(--sage-bg);
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .contact-card {
+      transition: outline-color .2s ease, box-shadow .25s ease, transform .25s ease;
+      outline: 2px solid transparent;
+      outline-offset: 4px;
+    }
+
+    .contact-card.contact-active {
+      outline-color: rgba(201, 168, 90, .58);
+      box-shadow: 0 20px 64px rgba(27, 58, 48, .18), 0 0 0 1px rgba(201, 168, 90, .18);
+      transform: translateY(-2px);
+    }
+
+    .form-status {
+      min-height: 1.25rem;
+      font-size: .86rem;
+      line-height: 1.5;
+      color: var(--text-muted);
+      margin-top: .8rem;
+    }
+
+    .form-status.success { color: #166534; }
+    .form-status.error { color: #b91c1c; }
+
+    .contact-field:disabled {
+      opacity: .72;
+      cursor: not-allowed;
+    }
+
+    .hp-field {
+      position: absolute;
+      left: -9999px;
+      width: 1px;
+      height: 1px;
+      opacity: 0;
+      pointer-events: none;
+      overflow: hidden;
+    }
+
+    .publication-link.is-disabled,
+    .publication-link[aria-disabled="true"] {
+      cursor: default;
+      opacity: .72;
+    }
+
   </style>
 </head>
 <body>
@@ -770,48 +859,54 @@
 <!-- ════════════════════════════════════════
      NAVIGATION
 ════════════════════════════════════════ -->
-<nav id="navbar" class="bg-forest sticky top-0 z-50" style="box-shadow: 0 2px 20px rgba(0,0,0,.25);">
+<nav id="navbar" style="background:var(--forest); box-shadow:0 2px 20px rgba(0,0,0,.22);" class="sticky top-0 z-50">
   <div class="max-w-7xl mx-auto px-5 sm:px-8">
     <div class="flex items-center justify-between h-[62px]">
-
-      <!-- Logo -->
       <a href="#home" class="flex items-center gap-2.5 no-underline">
-        <img src="images/logo.png" alt="Philip A. Balogun Logo" class="h-10 w-auto" />
+        <div class="brand-mark">PAB</div>
+        <div class="leading-tight">
+          <span class="text-white font-bold text-sm block">Philip A.</span>
+          <span class="text-[10px] block" style="color:rgba(255,255,255,.45);margin-top:-2px;">Balogun</span>
+        </div>
       </a>
 
-      <!-- Desktop Nav -->
       <div class="hidden md:flex items-center gap-7">
         <a href="#home" class="nav-link active">Home</a>
         <a href="#about" class="nav-link">About</a>
         <a href="#services" class="nav-link">Advisory</a>
         <a href="#client-portfolio" class="nav-link">Portfolio</a>
-        <a href="#cta" class="nav-link">Work With Philip</a>
+        <a href="#contact" class="nav-link">Contact</a>
       </div>
 
-      <!-- Desktop CTA -->
-      <div class="hidden md:flex items-center gap-3">
-        <button class="btn-primary py-[9px] px-[22px]">
-          <i class="fas fa-calendar-check text-xs"></i> Contact
+      <div class="hidden md:flex items-center gap-2">
+        <a href="profile.html" class="btn-outline" style="padding:8px 18px;font-size:.8rem;color:#fff;border-color:rgba(255,255,255,.22);">
+          <i class="fas fa-user-tie text-xs"></i> Executive Profile
+        </a>
+        <button type="button" class="btn-primary" data-contact-trigger style="padding:8px 18px;font-size:.8rem;">
+          <i class="fas fa-calendar-check text-xs"></i> Start Conversation
         </button>
       </div>
 
-      <!-- Mobile Hamburger -->
-      <button id="menu-btn" class="md:hidden text-white p-2 rounded-lg" aria-label="Menu">
+      <button id="menu-btn" class="md:hidden text-white p-2" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu">
         <i class="fas fa-bars text-lg"></i>
       </button>
     </div>
 
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden pb-4 border-t border-white/10 mt-1">
-      <div class="flex flex-col gap-1 pt-3">
-        <a href="#home" class="nav-link block py-2 px-1">Home</a>
-        <a href="#about" class="nav-link block py-2 px-1">About</a>
-        <a href="#services" class="nav-link block py-2 px-1">Advisory</a>
-        <a href="#client-portfolio" class="nav-link block py-2 px-1">Portfolio</a>
-        <a href="#cta" class="nav-link block py-2 px-1">Work With Philip</a>
-        <button class="btn-primary mt-3 justify-center">
-          <i class="fas fa-calendar-check text-xs"></i> Start a Conversation
-        </button>
+    <div id="mobile-menu" class="hidden md:hidden pb-4 border-t border-white/10 pt-3">
+      <div class="flex flex-col gap-1">
+        <a href="#home" class="nav-link py-2 block active">Home</a>
+        <a href="#about" class="nav-link py-2 block">About</a>
+        <a href="#services" class="nav-link py-2 block">Advisory</a>
+        <a href="#client-portfolio" class="nav-link py-2 block">Portfolio</a>
+        <a href="#contact" class="nav-link py-2 block">Contact</a>
+        <div class="flex gap-2 mt-3">
+          <a href="profile.html" class="btn-outline flex-1 justify-center" style="font-size:.8rem;padding:9px 12px;color:#fff;border-color:rgba(255,255,255,.22);">
+            <i class="fas fa-user-tie text-xs"></i> Profile
+          </a>
+          <button type="button" class="btn-primary flex-1 justify-center" data-contact-trigger style="font-size:.8rem;padding:9px 12px;">
+            <i class="fas fa-calendar-check text-xs"></i> Contact
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -836,10 +931,10 @@
 
         <!-- Book CTA -->
         <div class="mb-8">
-          <button class="btn-primary text-sm">
+          <a href="#services" class="btn-primary text-sm no-underline">
             <i class="fas fa-calendar-check"></i>
             Explore Advisory Work
-          </button>
+          </a>
         </div>
 
         <!-- Stars + Count -->
@@ -978,7 +1073,7 @@
 
       <!-- PPP &amp; Investment Readiness — FEATURED -->
       <div class="service-card featured relative overflow-hidden">
-        <button class="absolute top-5 right-5 bg-white text-[11px] font-bold text-gray-800 rounded-full px-4 py-1 hover:bg-gray-100 transition-colors">Learn More</button>
+        <a href="profile.html#services" class="absolute top-5 right-5 bg-white text-[11px] font-bold text-gray-800 rounded-full px-4 py-1 hover:bg-gray-100 transition-colors no-underline">Learn More</a>
         <div class="service-icon"><i class="fas fa-building"></i></div>
         <h3 class="font-bold text-base mb-2">PPP &amp; Investment Readiness</h3>
         <p class="text-sm leading-relaxed text-white/70">PPP screening, bankability logic, project preparation support, risk allocation, value-for-money framing and investment narratives.</p>
@@ -1077,7 +1172,7 @@
 
         </div>
 
-        <button class="btn-primary">
+        <button type="button" class="btn-primary" data-contact-trigger>
           Work with Philip
           <i class="fas fa-arrow-right text-xs"></i>
         </button>
@@ -1385,7 +1480,7 @@
         <p class="text-sm leading-7 mb-6" style="color:var(--text-muted);">
           A planned insight series on infrastructure transformation, institutional reform, ESG, PPP readiness, AI-enabled delivery and resilient public systems.
         </p>
-        <a class="publication-link" href="#" aria-disabled="true" onclick="return false;">
+        <a class="publication-link is-disabled" href="#publications" aria-disabled="true">
           Coming Soon <i class="fas fa-clock text-xs"></i>
         </a>
       </article>
@@ -1398,7 +1493,7 @@
         <p class="text-sm leading-7 mb-6" style="color:var(--text-muted);">
           A future practice note on dashboards, risk visibility, institutional memory, reporting systems and responsible AI adoption for project teams.
         </p>
-        <a class="publication-link" href="#" aria-disabled="true" onclick="return false;">
+        <a class="publication-link is-disabled" href="#publications" aria-disabled="true">
           Coming Soon <i class="fas fa-clock text-xs"></i>
         </a>
       </article>
@@ -1510,7 +1605,7 @@
           <p class="text-sm leading-relaxed mb-8" style="color:rgba(255,255,255,.65);">
             For advisory engagements, speaking invitations, training programmes and partnerships across infrastructure, PPP, ESG, urban systems, AI/data-enabled delivery and institutional reform.
           </p>
-          <button class="btn-primary">
+          <button type="button" class="btn-primary" data-contact-trigger>
             <i class="fas fa-calendar-check text-xs"></i>
             Start a Conversation
           </button>
@@ -1560,18 +1655,30 @@
       </div>
 
       <form id="contact-form" class="mt-10" novalidate>
+        <input type="hidden" name="to_name" value="Philip A. Balogun" />
+        <input type="hidden" name="page_url" value="" />
+        <input type="hidden" name="submitted_at" value="" />
+        <label class="hp-field" aria-hidden="true">
+          Company
+          <input type="text" name="company" tabindex="-1" autocomplete="off" />
+        </label>
+
         <div class="contact-grid">
           <label class="block">
             <span class="sr-only">Full Name</span>
-            <input class="contact-field" type="text" id="contact-name" name="name" placeholder="Full Name" required />
+            <input class="contact-field" type="text" id="contact-name" name="from_name" placeholder="Full Name" autocomplete="name" required />
           </label>
           <label class="block">
             <span class="sr-only">Email</span>
-            <input class="contact-field" type="email" id="contact-email" name="email" placeholder="Email address" required />
+            <input class="contact-field" type="email" id="contact-email" name="reply_to" placeholder="Email address" autocomplete="email" required />
+          </label>
+          <label class="block" style="grid-column: 1 / -1;">
+            <span class="sr-only">Subject or engagement type</span>
+            <input class="contact-field" type="text" id="contact-subject" name="subject" placeholder="Subject / Engagement Type" value="Contact" required />
           </label>
           <label class="block" style="grid-column: 1 / -1;">
             <span class="sr-only">Message</span>
-            <textarea class="contact-field" id="contact-message" name="message" placeholder="Your message" rows="6" required></textarea>
+            <textarea class="contact-field" id="contact-message" name="message" placeholder="Tell Philip about your advisory, training or speaking request..." rows="6" required></textarea>
           </label>
         </div>
         <div class="contact-submit-wrap">
@@ -1580,7 +1687,7 @@
             Send Message
           </button>
         </div>
-        <div class="form-notice" id="contact-notice" aria-live="polite"></div>
+        <div class="form-status" id="contact-notice" aria-live="polite"></div>
       </form>
     </div>
   </div>
@@ -1610,10 +1717,10 @@
           Designing delivery systems for resilient infrastructure, stronger institutions and sustainable public outcomes.
         </p>
         <div class="flex gap-2">
-          <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="social-btn"><i class="fab fa-x-twitter"></i></a>
-          <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/balogun.pheel" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://x.com/paybalogun" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter"><i class="fab fa-x-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/phdbalogun/" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#contact" class="social-btn" aria-label="Contact Philip"><i class="fab fa-instagram"></i></a>
         </div>
       </div>
 
@@ -1621,11 +1728,11 @@
       <div>
         <h5 class="text-white text-sm font-bold mb-4">Pages</h5>
         <ul class="space-y-2.5">
-          <li><a href="#" class="footer-link">Home</a></li>
-          <li><a href="#" class="footer-link">About Philip</a></li>
-          <li><a href="#" class="footer-link">Advisory</a></li>
-          <li><a href="#" class="footer-link">Portfolio</a></li>
-          <li><a href="#" class="footer-link">Speaking &amp; Training</a></li>
+          <li><a href="#home" class="footer-link">Home</a></li>
+          <li><a href="#about" class="footer-link">About Philip</a></li>
+          <li><a href="#services" class="footer-link">Advisory</a></li>
+          <li><a href="#client-portfolio" class="footer-link">Portfolio</a></li>
+          <li><a href="#contact" class="footer-link">Speaking &amp; Training</a></li>
         </ul>
       </div>
 
@@ -1633,10 +1740,10 @@
       <div>
         <h5 class="text-white text-sm font-bold mb-4">Resources</h5>
         <ul class="space-y-2.5">
-          <li><a href="#" class="footer-link">Insights &amp; Articles</a></li>
-          <li><a href="#" class="footer-link">Case Studies</a></li>
-          <li><a href="#" class="footer-link">Contact Philip</a></li>
-          <li><a href="#" class="footer-link">Frameworks</a></li>
+          <li><a href="#publications" class="footer-link">Insights &amp; Articles</a></li>
+          <li><a href="#gallery" class="footer-link">Case Studies</a></li>
+          <li><a href="#contact" class="footer-link">Contact Philip</a></li>
+          <li><a href="#services" class="footer-link">Frameworks</a></li>
         </ul>
       </div>
 
@@ -1644,9 +1751,9 @@
       <div>
         <h5 class="text-white text-sm font-bold mb-4">Company</h5>
         <ul class="space-y-2.5">
-          <li><a href="#" class="footer-link">Privacy Policy</a></li>
-          <li><a href="#" class="footer-link">Terms of Use</a></li>
-          <li><a href="#" class="footer-link">Accessibility</a></li>
+          <li><a href="profile.html" class="footer-link">Full Profile</a></li>
+          <li><a href="https://paconsult.org" class="footer-link" target="_blank" rel="noopener noreferrer">P&amp;A Consulting</a></li>
+          <li><a href="#contact" class="footer-link">Accessibility Contact</a></li>
         </ul>
       </div>
 
@@ -1662,6 +1769,8 @@
 </footer>
 
 
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
 <!-- ════════════════════════════════════════
      JAVASCRIPT
 ════════════════════════════════════════ -->
@@ -1673,6 +1782,7 @@
   menuBtn.addEventListener('click', () => {
     const open = !mobileMenu.classList.contains('hidden');
     mobileMenu.classList.toggle('hidden', open);
+    menuBtn.setAttribute('aria-expanded', String(!open));
     menuBtn.innerHTML = open
       ? '<i class="fas fa-bars text-lg"></i>'
       : '<i class="fas fa-times text-lg"></i>';
@@ -1682,6 +1792,7 @@
   mobileMenu.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
       mobileMenu.classList.add('hidden');
+      menuBtn.setAttribute('aria-expanded', 'false');
       menuBtn.innerHTML = '<i class="fas fa-bars text-lg"></i>';
     });
   });
@@ -1691,12 +1802,20 @@
   const navLinks  = document.querySelectorAll('a.nav-link');
 
   function setActiveNav() {
-    let current = '';
+    let current = 'home';
     sections.forEach(sec => {
-      if (window.scrollY + 90 >= sec.offsetTop) current = sec.id;
+      if (window.scrollY + 100 >= sec.offsetTop) current = sec.id;
     });
+
+    const navMap = {
+      gallery: 'client-portfolio',
+      publications: 'client-portfolio',
+      cta: 'contact'
+    };
+    const activeId = navMap[current] || current;
+
     navLinks.forEach(link => {
-      link.classList.toggle('active', link.getAttribute('href') === `#${current}`);
+      link.classList.toggle('active', link.getAttribute('href') === `#${activeId}`);
     });
   }
 
@@ -1854,28 +1973,107 @@
   function showPreviousImage() { renderLightbox(activeLightboxIndex - 1); }
   function showNextImage() { renderLightbox(activeLightboxIndex + 1); }
 
-  /* ─── Contact form_submit handler ─── */
+  /* ─── EmailJS Contact Form + Contact Scroll Focus ─── */
+  const EMAILJS_CONFIG = {
+    // Paste only your EmailJS Public Key below. Service and Template IDs are already filled from your dashboard snippet.
+    publicKey: 'C60MUFSjLZ2t0-DRj',
+    serviceId: 'service_edjvozi',
+    templateId: 'template_9fvs9o8'
+  };
+
+  function isEmailJsConfigured() {
+    return Object.values(EMAILJS_CONFIG).every(value => value && !value.startsWith('YOUR_EMAILJS_'));
+  }
+
+  if (window.emailjs && isEmailJsConfigured()) {
+    emailjs.init({ publicKey: EMAILJS_CONFIG.publicKey });
+  }
+
   const contactForm = document.getElementById('contact-form');
   const contactNotice = document.getElementById('contact-notice');
 
-  if (contactForm) {
-    contactForm.addEventListener('submit', event => {
-      event.preventDefault();
-      const name = document.getElementById('contact-name').value.trim();
-      const email = document.getElementById('contact-email').value.trim();
-      const message = document.getElementById('contact-message').value.trim();
+  function setFormState(form, state, message) {
+    const btn = form.querySelector('[type="submit"]');
+    const fields = form.querySelectorAll('.contact-field');
 
-      if (!name || !email || !message) {
-        contactNotice.textContent = 'Please complete all fields before sending.';
-        return;
-      }
+    if (contactNotice) {
+      contactNotice.className = 'form-status';
+      if (state === 'success') contactNotice.classList.add('success');
+      if (state === 'error') contactNotice.classList.add('error');
+      contactNotice.textContent = message || '';
+    }
 
-      const subject = encodeURIComponent('Contact from website — ' + name);
-      const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
-      window.location.href = `mailto:philip@philipbalogun.com?subject=${subject}&body=${body}`;
-      contactNotice.textContent = 'Opening your mail client now...';
-    });
+    if (state === 'loading') {
+      fields.forEach(field => field.disabled = true);
+      btn.disabled = true;
+      btn.innerHTML = '<i class="fas fa-spinner fa-spin text-xs"></i> Sending...';
+    } else {
+      fields.forEach(field => field.disabled = false);
+      btn.disabled = false;
+      btn.innerHTML = '<i class="fas fa-paper-plane text-xs"></i> Send Message';
+    }
   }
+
+  async function handleContactSubmit(event) {
+    event.preventDefault();
+    const form = event.currentTarget;
+
+    if (form.elements.company && form.elements.company.value.trim() !== '') return;
+
+    if (!form.checkValidity()) {
+      setFormState(form, 'error', 'Please complete your name, email, subject and message before sending.');
+      form.reportValidity();
+      return;
+    }
+
+    form.elements.page_url.value = window.location.href;
+    form.elements.submitted_at.value = new Date().toLocaleString();
+
+    if (!window.emailjs || !isEmailJsConfigured()) {
+      setFormState(form, 'error', 'EmailJS is wired in the code. Replace YOUR_EMAILJS_PUBLIC_KEY with your real Public Key to activate sending.');
+      return;
+    }
+
+    try {
+      setFormState(form, 'loading', 'Sending your message...');
+      await emailjs.sendForm(EMAILJS_CONFIG.serviceId, EMAILJS_CONFIG.templateId, form);
+      form.reset();
+      setFormState(form, 'success', 'Thank you. Your message has been sent successfully.');
+    } catch (error) {
+      console.error('EmailJS failed:', error);
+      setFormState(form, 'error', 'Sorry, the message could not be sent. Please check the EmailJS Public Key/template variables and try again.');
+    }
+  }
+
+  if (contactForm) {
+    contactForm.addEventListener('submit', handleContactSubmit);
+  }
+
+  function activateContactForm() {
+    const contactSection = document.getElementById('contact');
+    const contactCard = contactSection?.querySelector('.contact-card');
+    const firstField = contactSection?.querySelector('input[name="from_name"]');
+    const navHeight = document.querySelector('nav')?.offsetHeight || 0;
+
+    if (!contactSection) return;
+    const y = contactSection.getBoundingClientRect().top + window.pageYOffset - navHeight - 18;
+    window.scrollTo({ top: Math.max(y, 0), behavior: 'smooth' });
+
+    mobileMenu?.classList.add('hidden');
+    menuBtn?.setAttribute('aria-expanded', 'false');
+    if (menuBtn) menuBtn.innerHTML = '<i class="fas fa-bars text-lg"></i>';
+
+    contactCard?.classList.add('contact-active');
+    setTimeout(() => firstField?.focus({ preventScroll: true }), 650);
+    setTimeout(() => contactCard?.classList.remove('contact-active'), 2400);
+  }
+
+  document.querySelectorAll('[data-contact-trigger], a[href="#contact"]').forEach(el => {
+    el.addEventListener('click', event => {
+      event.preventDefault();
+      activateContactForm();
+    });
+  });
 
   galleryFilterButtons.forEach(button => {
     button.addEventListener('click', () => {
