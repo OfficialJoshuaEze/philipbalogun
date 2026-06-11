@@ -1379,14 +1379,15 @@
     <!-- Masonry Grid -->
     <div class="gallery-masonry" id="portfolio-gallery">
 
-      <article class="gallery-card" data-gallery-card tabindex="0" role="button" data-category="infrastructure">
+      <article class="gallery-card" data-gallery-card tabindex="0" role="button" data-category="infrastructure"
+               data-images='["images/Abia State Infrastructure/abia-state-infrastructure-01.jpg","images/Abia State Infrastructure/abia-state-infrastructure-02.jpg","images/Abia State Infrastructure/abia-state-infrastructure-03.jpg","images/Abia State Infrastructure/abia-state-infrastructure-04.jpg","images/Abia State Infrastructure/abia-state-infrastructure-05.jpg","images/Abia State Infrastructure/abia-state-infrastructure-06.jpg","images/Abia State Infrastructure/abia-state-infrastructure-07.jpg","images/Abia State Infrastructure/abia-state-infrastructure-08.jpg","images/Abia State Infrastructure/abia-state-infrastructure-09.jpg","images/Abia State Infrastructure/abia-state-infrastructure-10.jpg","images/Abia State Infrastructure/abia-state-infrastructure-11.jpg","images/Abia State Infrastructure/abia-state-infrastructure-12.jpg","images/Abia State Infrastructure/abia-state-infrastructure-13.jpg"]'>
         <div class="gallery-image-wrap" style="height: 330px;">
-          <img src="images/infrastructure/infrastructure-01.jpg" alt="Abia State infrastructure development" loading="lazy" />
-          <span class="gallery-badge"><i class="fas fa-helmet-safety"></i> Infrastructure</span>
+          <img src="images/Abia State Infrastructure/abia-state-infrastructure-01.jpg" alt="Abia State infrastructure groundbreaking and project delivery gallery" loading="lazy" />
+          <span class="gallery-badge"><i class="fas fa-helmet-safety"></i> Abia State Infrastructure</span>
         </div>
         <div class="gallery-caption">
-          <h3>Abia State Infrastructure</h3>
-          <p>Infrastructure delivery for Abia State, showcasing systems, projects and state-level public-value delivery.</p>
+          <h3>Abia State Infrastructure — Groundbreaking &amp; Delivery Engagement</h3>
+          <p>Groundbreaking, stakeholder engagement and infrastructure delivery moments from the Abia State small-town water schemes portfolio.</p>
         </div>
       </article>
 
@@ -1903,14 +1904,15 @@
       }
 
       const defaultAlt = clickedCard.querySelector('.gallery-caption h3')?.textContent.trim() || 'Gallery image';
+      const badgeText = clickedCard.querySelector('.gallery-badge')?.textContent.trim() || clickedCard.dataset.category || 'Portfolio';
       return imgs.map(src => ({
         card: clickedCard,
         src: src,
         alt: defaultAlt,
         title: clickedCard.querySelector('.gallery-caption h3')?.textContent.trim() || 'Gallery',
         caption: clickedCard.querySelector('.gallery-caption p')?.textContent.trim() || '',
-        category: clickedCard.dataset.category || 'training',
-        categoryKey: clickedCard.dataset.category || 'training'
+        category: badgeText,
+        categoryKey: clickedCard.dataset.category || 'portfolio'
       }));
     }
 
