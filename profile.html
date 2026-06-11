@@ -1,4 +1,3 @@
-<!-- /mnt/data/philipbalogun_profile_aligned.html -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -661,7 +660,8 @@
     }
 
     .profile-header {
-      margin-top: -55px;
+      margin-top: 0;
+      padding-top: 1.5rem;
     }
 
     .profile-actions {
@@ -749,7 +749,8 @@
       }
 
       .profile-header {
-        margin-top: -46px;
+        margin-top: 0;
+        padding-top: 1.15rem;
         padding-bottom: 1.25rem;
       }
 
@@ -920,6 +921,55 @@
         font-size: .76rem;
       }
     }
+
+
+    /* Contact form / scroll-focus polish */
+    #contact {
+      scroll-margin-top: 96px;
+    }
+
+    .contact-card {
+      transition: outline-color .2s ease, box-shadow .25s ease, transform .25s ease;
+      outline: 2px solid transparent;
+      outline-offset: 4px;
+    }
+
+    .contact-card.contact-active {
+      outline-color: rgba(201, 168, 90, .58);
+      box-shadow: 0 18px 55px rgba(27, 58, 48, .24), 0 0 0 1px rgba(201, 168, 90, .18);
+      transform: translateY(-2px);
+    }
+
+    .form-status {
+      min-height: 1.25rem;
+      font-size: .78rem;
+      line-height: 1.5;
+      color: rgba(255, 255, 255, .72);
+    }
+
+    .form-status.success {
+      color: #BBF7D0;
+    }
+
+    .form-status.error {
+      color: #FECACA;
+    }
+
+    .field:disabled {
+      opacity: .72;
+      cursor: not-allowed;
+    }
+
+    .hp-field {
+      position: absolute;
+      left: -9999px;
+      width: 1px;
+      height: 1px;
+      opacity: 0;
+      pointer-events: none;
+      overflow: hidden;
+    }
+
   </style>
 </head>
 
@@ -1183,9 +1233,9 @@
           <div class="card">
             <h3 class="font-bold text-sm mb-4" style="color:var(--forest);">Social Profiles</h3>
             <div class="social-row flex flex-wrap gap-2">
-              <a href="https://www.linkedin.com/in/phdbalogun/" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-              <a href="#" title="Twitter/X"><i class="fab fa-x-twitter"></i></a>
-              <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://ng.linkedin.com/in/phdbalogun" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://x.com/paybalogun" title="Twitter/X"><i class="fab fa-x-twitter"></i></a>
+              <a href="https://www.facebook.com/balogun.pheel" title="Facebook"><i class="fab fa-facebook-f"></i></a>
               <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
             </div>
           </div>
@@ -1535,19 +1585,26 @@
         </div>
 
         <div id="contact" class="mt-6">
-          <div class="card"
+          <div class="card contact-card"
             style="background:var(--forest); border-color:var(--forest); background-image:radial-gradient(ellipse 60% 70% at 90% 10%, rgba(62,158,114,.25) 0%, transparent 60%);">
             <span class="section-label" style="color:rgba(255,255,255,.55);">Get In Touch</span>
             <h2 class="text-xl font-extrabold mb-2 text-white">Start a Conversation</h2>
             <p class="text-xs mb-6" style="color:rgba(255,255,255,.55);">For advisory engagements, speaking invitations,
               training programmes and institutional partnerships.</p>
-            <form onsubmit="handleContactSubmit(event)" class="space-y-3">
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3"><input type="text" placeholder="Your Name"
-                  class="field" required /><input type="email" placeholder="Email Address" class="field" required />
+            <form id="contact-form" onsubmit="handleContactSubmit(event)" class="space-y-3">
+              <input type="hidden" name="to_name" value="Philip A. Balogun" />
+              <input type="hidden" name="page_url" value="" />
+              <input type="hidden" name="submitted_at" value="" />
+              <label class="hp-field" aria-hidden="true">Company
+                <input type="text" name="company" tabindex="-1" autocomplete="off" />
+              </label>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3"><input type="text" name="from_name" placeholder="Your Name"
+                  class="field" autocomplete="name" required /><input type="email" name="reply_to" placeholder="Email Address" class="field" autocomplete="email" required />
               </div>
-              <input type="text" placeholder="Subject / Engagement Type" class="field" />
-              <textarea placeholder="Tell Philip about your advisory, training or speaking request..." rows="4"
-                class="field" style="resize:none;"></textarea>
+              <input type="text" name="subject" placeholder="Subject / Engagement Type" class="field" required />
+              <textarea name="message" placeholder="Tell Philip about your advisory, training or speaking request..." rows="4"
+                class="field" style="resize:none;" required></textarea>
+              <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
               <button type="submit" class="btn-primary w-full justify-center py-3"><i
                   class="fas fa-paper-plane text-xs"></i> Send Message</button>
             </form>
@@ -1613,7 +1670,24 @@
     </div>
   </footer>
 
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
   <script>
+    const EMAILJS_CONFIG = {
+      // Replace these three values with your real EmailJS dashboard values.
+      publicKey: 'C60MUFSjLZ2t0-DRj',
+      serviceId: 'service_edjvozi',
+      templateId: 'template_9fvs9o8'
+    };
+
+    function isEmailJsConfigured() {
+      return Object.values(EMAILJS_CONFIG).every(value => value && !value.startsWith('YOUR_EMAILJS_'));
+    }
+
+    if (window.emailjs && isEmailJsConfigured()) {
+      emailjs.init({ publicKey: EMAILJS_CONFIG.publicKey });
+    }
+
     const menuBtn = document.getElementById('menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
     menuBtn.addEventListener('click', () => {
@@ -1675,17 +1749,82 @@
       fadeObserver.observe(el);
     });
 
-    function handleContactSubmit(e) {
-      e.preventDefault();
-      const btn = e.target.querySelector('[type="submit"]');
-      btn.innerHTML = '<i class="fas fa-check text-xs"></i> Message Sent!';
-      btn.style.background = '#16a34a';
-      setTimeout(() => {
+    function setFormState(form, state, message) {
+      const btn = form.querySelector('[type="submit"]');
+      const fields = form.querySelectorAll('.field');
+      const status = document.getElementById('form-status');
+
+      status.className = 'form-status';
+      if (state === 'success') status.classList.add('success');
+      if (state === 'error') status.classList.add('error');
+      status.textContent = message || '';
+
+      if (state === 'loading') {
+        fields.forEach(field => field.disabled = true);
+        btn.disabled = true;
+        btn.innerHTML = '<i class="fas fa-spinner fa-spin text-xs"></i> Sending...';
+      } else {
+        fields.forEach(field => field.disabled = false);
+        btn.disabled = false;
         btn.innerHTML = '<i class="fas fa-paper-plane text-xs"></i> Send Message';
-        btn.style.background = '';
-        e.target.reset();
-      }, 3000);
+      }
     }
+
+    async function handleContactSubmit(e) {
+      e.preventDefault();
+      const form = e.target;
+
+      if (form.company && form.company.value.trim() !== '') return;
+      form.page_url.value = window.location.href;
+      form.submitted_at.value = new Date().toLocaleString();
+
+      if (!window.emailjs || !isEmailJsConfigured()) {
+        setFormState(form, 'error', 'EmailJS is ready in the code, but the Public Key, Service ID and Template ID still need to be added.');
+        return;
+      }
+
+      try {
+        setFormState(form, 'loading', 'Sending your message...');
+        await emailjs.sendForm(EMAILJS_CONFIG.serviceId, EMAILJS_CONFIG.templateId, form);
+        form.reset();
+        setFormState(form, 'success', 'Thank you. Your message has been sent successfully.');
+      } catch (error) {
+        console.error('EmailJS failed:', error);
+        setFormState(form, 'error', 'Sorry, the message could not be sent. Please check the EmailJS IDs/template variables and try again.');
+      }
+    }
+
+    function activateContactForm() {
+      const contactSection = document.getElementById('contact');
+      const contactCard = contactSection?.querySelector('.contact-card');
+      const firstField = contactSection?.querySelector('input[name="from_name"]');
+      const navHeight = document.querySelector('nav')?.offsetHeight || 0;
+
+      if (!contactSection) return;
+      const y = contactSection.getBoundingClientRect().top + window.pageYOffset - navHeight - 18;
+      window.scrollTo({ top: Math.max(y, 0), behavior: 'smooth' });
+
+      contactCard?.classList.add('contact-active');
+      setTimeout(() => firstField?.focus({ preventScroll: true }), 650);
+      setTimeout(() => contactCard?.classList.remove('contact-active'), 2400);
+    }
+
+    document.querySelectorAll('a[href="#contact"], button').forEach(el => {
+      const label = el.textContent.trim().toLowerCase();
+      const shouldOpenContact = el.matches('a[href="#contact"]') ||
+        label.includes('start conversation') ||
+        label.includes('start a conversation') ||
+        label.includes('contact philip');
+
+      if (!shouldOpenContact) return;
+      el.addEventListener('click', event => {
+        event.preventDefault();
+        mobileMenu?.classList.add('hidden');
+        if (menuBtn) menuBtn.innerHTML = '<i class="fas fa-bars text-lg"></i>';
+        activateContactForm();
+      });
+    });
+
     setTimeout(animateSkillBars, 400);
   </script>
 
