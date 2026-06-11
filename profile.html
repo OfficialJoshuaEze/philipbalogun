@@ -1,0 +1,1694 @@
+<!-- /mnt/data/philipbalogun_profile_aligned.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Philip A. Balogun — Executive Profile</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest: { DEFAULT: '#1B3A30', 700: '#162F27', 600: '#1B3A30', 500: '#24503F', 400: '#2D6350' },
+            sage: { DEFAULT: '#EDF5F0', 100: '#F4FAF7', 200: '#E2EFE8' },
+            accent: { DEFAULT: '#3E9E72', light: '#4DB882', dark: '#2E7D58' },
+            gold: { DEFAULT: '#C9A85A', soft: '#F3E7C2' },
+          },
+          fontFamily: { jakarta: ['"Plus Jakarta Sans"', 'sans-serif'] },
+          boxShadow: {
+            card: '0 2px 16px 0 rgba(27,58,48,0.08)',
+            premium: '0 16px 50px rgba(27,58,48,.14)',
+          },
+        }
+      }
+    }
+  </script>
+
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: #1a2a25;
+      background: #F7FAF8;
+    }
+
+    :root {
+      --forest: #1B3A30;
+      --forest-deep: #132A22;
+      --sage-bg: #EDF5F0;
+      --accent: #3E9E72;
+      --accent-light: #4DB882;
+      --gold: #C9A85A;
+      --text-muted: #6B7B74;
+      --border-light: #E2EFE8;
+      --white: #ffffff;
+    }
+
+    .bg-forest {
+      background-color: var(--forest);
+    }
+
+    .bg-forest-deep {
+      background-color: var(--forest-deep);
+    }
+
+    .bg-sage {
+      background-color: var(--sage-bg);
+    }
+
+    .text-accent {
+      color: var(--accent);
+    }
+
+    .nav-link {
+      position: relative;
+      color: rgba(255, 255, 255, 0.66);
+      font-size: .875rem;
+      font-weight: 500;
+      transition: color .2s;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+      color: #fff;
+    }
+
+    .nav-link.active::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: #fff;
+      border-radius: 2px;
+    }
+
+    .brand-mark {
+      width: 34px;
+      height: 34px;
+      border-radius: 999px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, var(--accent), #2E7D58);
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .16), 0 8px 18px rgba(0, 0, 0, .18);
+      color: #fff;
+      font-size: .72rem;
+      font-weight: 800;
+      letter-spacing: -.04em;
+    }
+
+    .section-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--accent);
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      margin-bottom: .9rem;
+    }
+
+    .section-label::before {
+      content: '+';
+      font-size: 1rem;
+      font-weight: 800;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: var(--accent);
+      color: #fff;
+      font-weight: 700;
+      font-size: .875rem;
+      font-family: inherit;
+      padding: 10px 22px;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      transition: background .2s, transform .15s, box-shadow .2s;
+      box-shadow: 0 4px 14px rgba(62, 158, 114, .3);
+    }
+
+    .btn-primary:hover {
+      background: var(--accent-light);
+      transform: translateY(-1px);
+      box-shadow: 0 7px 22px rgba(62, 158, 114, .38);
+    }
+
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: transparent;
+      color: var(--forest);
+      font-weight: 700;
+      font-size: .875rem;
+      font-family: inherit;
+      padding: 10px 22px;
+      border-radius: 50px;
+      border: 1.5px solid var(--border-light);
+      cursor: pointer;
+      transition: all .2s;
+    }
+
+    .btn-outline:hover {
+      background: var(--sage-bg);
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .btn-forest {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: var(--forest);
+      color: #fff;
+      font-weight: 700;
+      font-size: .875rem;
+      font-family: inherit;
+      padding: 10px 22px;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      transition: background .2s, transform .15s;
+    }
+
+    .btn-forest:hover {
+      background: #244d40;
+      transform: translateY(-1px);
+    }
+
+    .btn-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      border: 1.5px solid var(--border-light);
+      background: #fff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: all .2s;
+      font-size: .8rem;
+    }
+
+    .btn-icon:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: var(--sage-bg);
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 1.25rem;
+      border: 1.5px solid var(--border-light);
+      padding: 1.5rem;
+    }
+
+    .card-hover {
+      transition: border-color .2s, box-shadow .2s, transform .2s;
+    }
+
+    .card-hover:hover {
+      border-color: var(--accent);
+      box-shadow: 0 6px 28px rgba(62, 158, 114, .12);
+      transform: translateY(-2px);
+    }
+
+    .cover-bg {
+      background: var(--forest);
+      background-image:
+        radial-gradient(ellipse 60% 80% at 80% 30%, rgba(62, 158, 114, .2) 0%, transparent 65%),
+        radial-gradient(ellipse 40% 60% at 10% 80%, rgba(0, 0, 0, .22) 0%, transparent 55%),
+        linear-gradient(90deg, rgba(255, 255, 255, .025) 1px, transparent 1px),
+        linear-gradient(0deg, rgba(255, 255, 255, .025) 1px, transparent 1px);
+      background-size: auto, auto, 54px 54px, 54px 54px;
+      height: 220px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cover-bg::after {
+      content: '';
+      position: absolute;
+      right: -120px;
+      top: -140px;
+      width: 430px;
+      height: 430px;
+      border-radius: 50%;
+      border: 1px solid rgba(201, 168, 90, .16);
+      box-shadow: inset 0 0 0 26px rgba(201, 168, 90, .035), inset 0 0 0 56px rgba(255, 255, 255, .02);
+    }
+
+    @media(min-width:768px) {
+      .cover-bg {
+        height: 280px;
+      }
+    }
+
+    .avatar-ring {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, .15);
+      overflow: hidden;
+      background: var(--sage-bg);
+      flex-shrink: 0;
+    }
+
+    @media(min-width:640px) {
+      .avatar-ring {
+        width: 130px;
+        height: 130px;
+      }
+    }
+
+    .avatar-ring img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+    }
+
+    .online-dot {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: #22c55e;
+      border: 2.5px solid #fff;
+      position: absolute;
+      bottom: 6px;
+      right: 6px;
+    }
+
+    .stat-chip {
+      text-align: center;
+    }
+
+    .stat-chip .num {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--forest);
+      line-height: 1;
+    }
+
+    .stat-chip .lbl {
+      font-size: .7rem;
+      color: var(--text-muted);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+      margin-top: 2px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--sage-bg);
+      border: 1.5px solid var(--border-light);
+      border-radius: 50px;
+      padding: 5px 13px;
+      font-size: .75rem;
+      font-weight: 600;
+      color: var(--forest);
+      white-space: nowrap;
+    }
+
+    .badge.green {
+      background: rgba(62, 158, 114, .1);
+      border-color: rgba(62, 158, 114, .3);
+      color: var(--accent);
+    }
+
+    .badge.gold {
+      background: rgba(201, 168, 90, .12);
+      border-color: rgba(201, 168, 90, .28);
+      color: #9B7834;
+    }
+
+    .skill-bar-track {
+      height: 6px;
+      background: var(--sage-bg);
+      border-radius: 99px;
+      overflow: hidden;
+    }
+
+    .skill-bar-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--accent), var(--accent-light));
+      border-radius: 99px;
+      transition: width 1.2s cubic-bezier(.4, 0, .2, 1);
+    }
+
+    .timeline {
+      position: relative;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 18px;
+      top: 8px;
+      bottom: 8px;
+      width: 2px;
+      background: var(--border-light);
+      border-radius: 2px;
+    }
+
+    @media(min-width:640px) {
+      .timeline::before {
+        left: 22px;
+      }
+    }
+
+    .tl-item {
+      position: relative;
+      padding-left: 52px;
+    }
+
+    @media(min-width:640px) {
+      .tl-item {
+        padding-left: 60px;
+      }
+    }
+
+    .tl-dot {
+      position: absolute;
+      left: 10px;
+      top: 4px;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: #fff;
+      border: 2.5px solid var(--accent);
+      z-index: 1;
+    }
+
+    @media(min-width:640px) {
+      .tl-dot {
+        left: 14px;
+      }
+    }
+
+    .tl-dot.edu {
+      border-color: var(--gold);
+    }
+
+    .portfolio-card {
+      border-radius: 1.25rem;
+      overflow: hidden;
+      border: 1.5px solid var(--border-light);
+      background: #fff;
+      cursor: pointer;
+      transition: transform .2s, box-shadow .2s, border-color .2s;
+    }
+
+    .portfolio-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(27, 58, 48, .14);
+      border-color: rgba(62, 158, 114, .35);
+    }
+
+    .portfolio-thumb {
+      height: 180px;
+      overflow: hidden;
+      background: var(--sage-bg);
+    }
+
+    .portfolio-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .4s ease;
+    }
+
+    .portfolio-card:hover .portfolio-thumb img {
+      transform: scale(1.04);
+    }
+
+    .tag {
+      display: inline-block;
+      background: var(--sage-bg);
+      color: var(--forest);
+      border-radius: 6px;
+      padding: 3px 10px;
+      font-size: .7rem;
+      font-weight: 700;
+      border: 1px solid var(--border-light);
+    }
+
+    .tab-btn {
+      padding: 9px 20px;
+      border-radius: 50px;
+      font-size: .875rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      background: transparent;
+      color: var(--text-muted);
+      transition: all .2s;
+      font-family: inherit;
+    }
+
+    .tab-btn.active {
+      background: var(--forest);
+      color: #fff;
+      box-shadow: 0 4px 14px rgba(27, 58, 48, .25);
+    }
+
+    .tab-btn:not(.active):hover {
+      background: #fff;
+      color: var(--forest);
+    }
+
+    .tab-pane {
+      display: none;
+    }
+
+    .tab-pane.active {
+      display: block;
+    }
+
+    .insight-card {
+      background: #fff;
+      border: 1.5px solid var(--border-light);
+      border-radius: 1.1rem;
+      padding: 1.25rem;
+      transition: border-color .2s, transform .2s, box-shadow .2s;
+    }
+
+    .insight-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(62, 158, 114, .1);
+    }
+
+    .field {
+      width: 100%;
+      border: 1.5px solid var(--border-light);
+      border-radius: .75rem;
+      padding: .7rem 1rem;
+      font-size: .875rem;
+      font-family: inherit;
+      color: var(--forest);
+      background: #fff;
+      outline: none;
+      transition: border-color .2s;
+    }
+
+    .field:focus {
+      border-color: var(--accent);
+    }
+
+    .field::placeholder {
+      color: #aac4b8;
+    }
+
+    @media(min-width:1024px) {
+      .sidebar-sticky {
+        position: sticky;
+        top: 80px;
+      }
+    }
+
+    .avail-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(34, 197, 94, .1);
+      border: 1.5px solid rgba(34, 197, 94, .3);
+      border-radius: 50px;
+      padding: 6px 14px;
+    }
+
+    .avail-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #22c55e;
+    }
+
+    .social-row a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: var(--sage-bg);
+      color: var(--forest);
+      font-size: .75rem;
+      border: 1.5px solid var(--border-light);
+      transition: all .2s;
+    }
+
+    .social-row a:hover {
+      background: var(--forest);
+      color: #fff;
+      border-color: var(--forest);
+    }
+
+    .footer-link {
+      color: rgba(255, 255, 255, .45);
+      font-size: .875rem;
+      transition: color .2s;
+      display: block;
+    }
+
+    .footer-link:hover {
+      color: rgba(255, 255, 255, .85);
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(18px)
+      }
+
+      to {
+        opacity: 1;
+        transform: none
+      }
+    }
+
+    .fade-up {
+      animation: fadeUp .5s ease both;
+    }
+
+    .d1 {
+      animation-delay: .08s;
+    }
+
+    .d2 {
+      animation-delay: .18s;
+    }
+
+    .d3 {
+      animation-delay: .28s;
+    }
+
+    .d4 {
+      animation-delay: .38s;
+    }
+
+
+    /* ── MOBILE POLISH / RESPONSIVE HARDENING ── */
+    body {
+      overflow-x: hidden;
+    }
+
+    img,
+    svg,
+    video,
+    canvas {
+      max-width: 100%;
+    }
+
+    a {
+      overflow-wrap: anywhere;
+    }
+
+    .cover-kicker,
+    .cover-copy {
+      position: absolute;
+      left: 8%;
+      z-index: 1;
+    }
+
+    .cover-kicker {
+      top: 32px;
+      color: rgba(255, 255, 255, .10);
+      font-size: .72rem;
+      font-weight: 800;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+
+    .cover-copy {
+      bottom: 28px;
+      max-width: 540px;
+      color: rgba(255, 255, 255, .52);
+      font-size: .86rem;
+      line-height: 1.8;
+    }
+
+    .profile-header {
+      margin-top: -55px;
+    }
+
+    .profile-actions {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+    }
+
+    .profile-meta {
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+      flex-wrap: wrap;
+    }
+
+    .stats-strip {
+      scroll-snap-type: x proximity;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .stats-strip::-webkit-scrollbar,
+    .tab-nav::-webkit-scrollbar {
+      display: none;
+    }
+
+    .stats-strip .stat-chip {
+      scroll-snap-align: start;
+      min-width: max-content;
+    }
+
+    .tab-nav {
+      max-width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+
+    .tab-nav .tab-btn {
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .profile-grid {
+      align-items: start;
+    }
+
+    .profile-title {
+      max-width: 100%;
+    }
+
+    .profile-title-line {
+      min-width: 0;
+    }
+
+    @media (max-width: 767px) {
+      .cover-bg {
+        height: 190px;
+        background-size: auto, auto, 40px 40px, 40px 40px;
+      }
+
+      .cover-bg::after {
+        right: -190px;
+        top: -170px;
+        width: 360px;
+        height: 360px;
+      }
+
+      .cover-kicker {
+        top: 22px;
+        left: 20px;
+        right: 20px;
+        font-size: .58rem;
+        letter-spacing: .12em;
+        line-height: 1.6;
+      }
+
+      .cover-copy {
+        left: 20px;
+        right: 20px;
+        bottom: 48px;
+        max-width: none;
+        font-size: .74rem;
+        line-height: 1.65;
+        color: rgba(255, 255, 255, .56);
+      }
+
+      .profile-header {
+        margin-top: -46px;
+        padding-bottom: 1.25rem;
+      }
+
+      .avatar-ring {
+        width: 96px;
+        height: 96px;
+        border-width: 3px;
+      }
+
+      .online-dot {
+        width: 12px;
+        height: 12px;
+        bottom: 5px;
+        right: 5px;
+      }
+
+      .profile-title {
+        font-size: 1.55rem !important;
+        line-height: 1.12 !important;
+      }
+
+      .avail-chip {
+        padding: 5px 11px;
+        max-width: 100%;
+      }
+
+      .avail-chip span:last-child {
+        font-size: .64rem !important;
+        line-height: 1.2;
+      }
+
+      .profile-meta {
+        align-items: flex-start;
+        gap: .5rem;
+      }
+
+      .profile-meta span {
+        width: 100%;
+        line-height: 1.45;
+      }
+
+      .profile-actions {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: .65rem;
+        margin-top: .25rem;
+      }
+
+      .profile-actions .btn-icon {
+        display: none;
+      }
+
+      .profile-actions .btn-outline,
+      .profile-actions .btn-primary {
+        width: 100%;
+        padding: 11px 16px;
+        font-size: .82rem;
+      }
+
+      .stats-strip {
+        gap: 1rem !important;
+        padding: .1rem 0 1rem;
+        margin-left: -1.25rem;
+        margin-right: -1.25rem;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+      }
+
+      .stats-strip .w-px {
+        display: none;
+      }
+
+      .stat-chip {
+        min-width: 128px;
+        padding: .85rem .95rem;
+        border: 1.5px solid var(--border-light);
+        border-radius: 1rem;
+        background: #fff;
+        box-shadow: 0 2px 14px rgba(27, 58, 48, .055);
+      }
+
+      .stat-chip .num {
+        font-size: 1.05rem;
+      }
+
+      .stat-chip .lbl {
+        font-size: .62rem;
+        line-height: 1.2;
+      }
+
+      .tab-nav {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        width: 100%;
+        border-radius: 1.15rem !important;
+        padding: .45rem !important;
+        margin-bottom: 1.35rem !important;
+      }
+
+      .tab-nav .tab-btn {
+        padding: 9px 15px;
+        font-size: .8rem;
+      }
+
+      .card {
+        border-radius: 1.05rem;
+        padding: 1.15rem;
+      }
+
+      .section-label {
+        font-size: .69rem;
+        margin-bottom: .65rem;
+      }
+
+      .portfolio-thumb {
+        height: 150px;
+      }
+
+      .tl-item {
+        padding-left: 46px;
+      }
+
+      .timeline::before {
+        left: 16px;
+      }
+
+      .tl-dot {
+        left: 8px;
+      }
+
+      .field {
+        font-size: .84rem;
+        padding: .72rem .9rem;
+      }
+
+      .btn-outline,
+      .btn-primary,
+      .btn-forest {
+        min-height: 42px;
+      }
+    }
+
+    @media (max-width: 430px) {
+      .cover-copy {
+        display: none;
+      }
+
+      .cover-bg {
+        height: 165px;
+      }
+
+      .profile-title {
+        font-size: 1.42rem !important;
+      }
+
+      .avatar-ring {
+        width: 90px;
+        height: 90px;
+      }
+
+      .stat-chip {
+        min-width: 118px;
+      }
+
+      .tab-nav .tab-btn {
+        padding: 8px 13px;
+        font-size: .76rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav style="background:var(--forest); box-shadow:0 2px 20px rgba(0,0,0,.22);" class="sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="flex items-center justify-between h-[62px]">
+        <a href="index.html" class="flex items-center gap-2.5 no-underline">
+          <div class="brand-mark">PAB</div>
+          <div class="leading-tight">
+            <span class="text-white font-bold text-sm block">Philip A.</span>
+            <span class="text-[10px] block" style="color:rgba(255,255,255,.45);margin-top:-2px;">Balogun</span>
+          </div>
+        </a>
+
+        <div class="hidden md:flex items-center gap-7">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="#about-tab" class="nav-link active">Profile</a>
+          <a href="#services" class="nav-link">Advisory</a>
+          <a href="#portfolio-tab" class="nav-link">Portfolio</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+
+        <div class="hidden md:flex items-center gap-2">
+          <button class="btn-outline"
+            style="padding:8px 18px;font-size:.8rem;color:#fff;border-color:rgba(255,255,255,.22);">
+            <i class="fas fa-download text-xs"></i> Executive Profile
+          </button>
+          <button class="btn-primary" style="padding:8px 18px;font-size:.8rem;">
+            <i class="fas fa-calendar-check text-xs"></i> Start Conversation
+          </button>
+        </div>
+
+        <button id="menu-btn" class="md:hidden text-white p-2" aria-label="Menu">
+          <i class="fas fa-bars text-lg"></i>
+        </button>
+      </div>
+
+      <div id="mobile-menu" class="hidden md:hidden pb-4 border-t border-white/10 pt-3">
+        <div class="flex flex-col gap-1">
+          <a href="index.html" class="nav-link py-2 block">Home</a>
+          <a href="#about-tab" class="nav-link py-2 block active">Profile</a>
+          <a href="#services" class="nav-link py-2 block">Advisory</a>
+          <a href="#portfolio-tab" class="nav-link py-2 block">Portfolio</a>
+          <a href="#contact" class="nav-link py-2 block">Contact</a>
+          <div class="flex gap-2 mt-3">
+            <button class="btn-outline flex-1 justify-center"
+              style="font-size:.8rem;padding:9px 12px;color:#fff;border-color:rgba(255,255,255,.22);">
+              <i class="fas fa-download text-xs"></i> Profile
+            </button>
+            <button class="btn-primary flex-1 justify-center" style="font-size:.8rem;padding:9px 12px;">
+              <i class="fas fa-calendar-check text-xs"></i> Contact
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="cover-bg fade-up">
+    <div class="cover-kicker">Infrastructure · Institutions · Impact</div>
+    <div class="cover-copy">An executive profile for infrastructure transformation, public value delivery, PPP, ESG,
+      urban systems, AI/data-enabled delivery and institutional reform.</div>
+  </div>
+
+  <div class="bg-white" style="border-bottom:1.5px solid var(--border-light);">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="profile-header flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 pb-6">
+        <div class="flex flex-col sm:flex-row sm:items-end gap-4">
+          <div class="relative inline-block flex-shrink-0 fade-up d1">
+            <div class="avatar-ring">
+              <img src="hero.png" alt="Philip A. Balogun" />
+            </div>
+            <span class="online-dot"></span>
+          </div>
+          <div class="profile-title-line pb-1 fade-up d2">
+            <div class="flex items-center gap-2 flex-wrap">
+              <h1 class="profile-title text-2xl sm:text-3xl font-extrabold" style="color:var(--forest);">Philip A.
+                Balogun</h1>
+              <div class="avail-chip">
+                <span class="avail-dot"></span>
+                <span style="font-size:.7rem;font-weight:700;color:#16a34a;">Available for Advisory / Speaking</span>
+              </div>
+            </div>
+            <p class="text-sm font-semibold mt-0.5" style="color:var(--accent);">Infrastructure Transformation &amp;
+              Public Value Delivery Advisor</p>
+            <div class="profile-meta mt-1.5">
+              <span class="flex items-center gap-1.5 text-xs" style="color:var(--text-muted);"><i
+                  class="fas fa-map-marker-alt" style="color:var(--accent);"></i> Abuja / Lagos / Global Remote</span>
+              <span class="flex items-center gap-1.5 text-xs" style="color:var(--text-muted);"><i
+                  class="fas fa-briefcase" style="color:var(--accent);"></i> 12+ Years Professional Experience</span>
+              <span class="flex items-center gap-1.5 text-xs" style="color:var(--accent); font-weight:600;"><i
+                  class="fas fa-check-circle"></i> PMP · PMI-ACP · PMI-RMP · CP3P</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile-actions fade-up d3">
+          <button class="btn-icon" title="Share Profile"><i class="fas fa-share-alt"></i></button>
+          <button class="btn-outline"><i class="fas fa-download text-xs"></i> Download Profile</button>
+          <button class="btn-primary"><i class="fas fa-paper-plane text-xs"></i> Contact Philip</button>
+        </div>
+      </div>
+
+      <div class="stats-strip flex items-center gap-6 sm:gap-10 pb-5 overflow-x-auto fade-up d4"
+        style="scrollbar-width:none;">
+        <div class="stat-chip flex-shrink-0">
+          <div class="num">12+</div>
+          <div class="lbl">Years Experience</div>
+        </div>
+        <div class="w-px h-8 flex-shrink-0" style="background:var(--border-light);"></div>
+        <div class="stat-chip flex-shrink-0">
+          <div class="num">7+</div>
+          <div class="lbl">Humanitarian Infra</div>
+        </div>
+        <div class="w-px h-8 flex-shrink-0" style="background:var(--border-light);"></div>
+        <div class="stat-chip flex-shrink-0">
+          <div class="num">Multi</div>
+          <div class="lbl">Sector Exposure</div>
+        </div>
+        <div class="w-px h-8 flex-shrink-0" style="background:var(--border-light);"></div>
+        <div class="stat-chip flex-shrink-0">
+          <div class="num">Global</div>
+          <div class="lbl">Advisory Outlook</div>
+        </div>
+        <div class="w-px h-8 flex-shrink-0" style="background:var(--border-light);"></div>
+        <div class="stat-chip flex-shrink-0"><a href="https://paconsult.org">
+            <div class="num">P&amp;A</div>
+            <div class="lbl">Founder Platform</div>
+          </a></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 py-8">
+    <div class="tab-nav flex items-center gap-2 flex-wrap mb-8 p-1.5 rounded-2xl inline-flex"
+      style="background:var(--sage-bg); border:1.5px solid var(--border-light);">
+      <button class="tab-btn active" data-tab="about-tab"><i class="fas fa-user mr-1.5"></i> About</button>
+      <button class="tab-btn" data-tab="experience-tab"><i class="fas fa-briefcase mr-1.5"></i> Experience</button>
+      <button class="tab-btn" data-tab="portfolio-tab"><i class="fas fa-th-large mr-1.5"></i> Portfolio</button>
+      <button class="tab-btn" data-tab="insights-tab"><i class="fas fa-lightbulb mr-1.5"></i> Insights</button>
+    </div>
+
+    <div class="profile-grid grid grid-cols-1 lg:grid-cols-3 gap-7">
+      <aside class="lg:col-span-1 order-2 lg:order-1">
+        <div class="sidebar-sticky flex flex-col gap-5">
+          <div class="card">
+            <h3 class="font-bold text-sm mb-4" style="color:var(--forest);">Quick Profile</h3>
+            <ul class="space-y-3">
+              <li class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0"
+                  style="background:var(--sage-bg);"><i class="fas fa-globe text-xs" style="color:var(--accent);"></i>
+                </div>
+                <div>
+                  <p class="text-[10px] font-bold uppercase tracking-wider" style="color:var(--text-muted);">Website</p>
+                  <a href="https://philipbalogun.com" class="text-sm font-semibold"
+                    style="color:var(--accent);">philipbalogun.com</a>
+                </div>
+              </li>
+              <li class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0"
+                  style="background:var(--sage-bg);"><i class="fab fa-linkedin-in text-xs"
+                    style="color:var(--accent);"></i></div>
+                <div>
+                  <p class="text-[10px] font-bold uppercase tracking-wider" style="color:var(--text-muted);">LinkedIn
+                  </p><a href="https://www.linkedin.com/in/phdbalogun/" class="text-sm font-semibold"
+                    style="color:var(--accent);">linkedin.com/in/phdbalogun</a>
+                </div>
+              </li>
+              <li class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0"
+                  style="background:var(--sage-bg);"><i class="fas fa-map-marker-alt text-xs"
+                    style="color:var(--accent);"></i></div>
+                <div>
+                  <p class="text-[10px] font-bold uppercase tracking-wider" style="color:var(--text-muted);">Base</p>
+                  <p class="text-sm font-semibold" style="color:var(--forest);">Nigeria-based · Global outlook</p>
+                </div>
+              </li>
+              <li class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0"
+                  style="background:var(--sage-bg);"><i class="fas fa-language text-xs"
+                    style="color:var(--accent);"></i></div>
+                <div>
+                  <p class="text-[10px] font-bold uppercase tracking-wider" style="color:var(--text-muted);">Languages
+                  </p>
+                  <p class="text-sm font-semibold" style="color:var(--forest);">English · Hausa · Yoruba · French
+                    developing</p>
+                </div>
+              </li>
+              <li class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0"
+                  style="background:var(--sage-bg);"><i class="fas fa-clock text-xs" style="color:var(--accent);"></i>
+                </div>
+                <div>
+                  <p class="text-[10px] font-bold uppercase tracking-wider" style="color:var(--text-muted);">Engagements
+                  </p>
+                  <p class="text-sm font-semibold" style="color:var(--forest);">Advisory · Speaking · Training</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3 class="font-bold text-sm mb-4" style="color:var(--forest);">Capability Stack</h3>
+            <div class="space-y-3.5">
+              <div>
+                <div class="flex justify-between mb-1.5"><span class="text-xs"
+                    style="color:var(--forest);font-weight:600;">Infrastructure Transformation</span><span
+                    class="text-xs font-bold" style="color:var(--accent);">96%</span></div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="width:0%" data-width="96%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-1.5"><span class="text-xs"
+                    style="color:var(--forest);font-weight:600;">Public Value Delivery</span><span
+                    class="text-xs font-bold" style="color:var(--accent);">94%</span></div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="width:0%" data-width="94%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-1.5"><span class="text-xs"
+                    style="color:var(--forest);font-weight:600;">PPP &amp; Investment Readiness</span><span
+                    class="text-xs font-bold" style="color:var(--accent);">88%</span></div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="width:0%" data-width="88%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-1.5"><span class="text-xs"
+                    style="color:var(--forest);font-weight:600;">ESG / Social Impact</span><span
+                    class="text-xs font-bold" style="color:var(--accent);">90%</span></div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="width:0%" data-width="90%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-1.5"><span class="text-xs"
+                    style="color:var(--forest);font-weight:600;">AI/Data-enabled Delivery</span><span
+                    class="text-xs font-bold" style="color:var(--accent);">84%</span></div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="width:0%" data-width="84%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3 class="font-bold text-sm mb-4" style="color:var(--forest);">Expertise Tags</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="badge">PPP</span><span class="badge">ESG</span><span class="badge">Urban Systems</span><span
+                class="badge">WASH</span><span class="badge">Public Health Infrastructure</span><span
+                class="badge">Procurement Governance</span><span class="badge">Risk Management</span><span
+                class="badge">Training</span><span class="badge">Institutional Reform</span><span
+                class="badge green">Open to Engagements</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3 class="font-bold text-sm mb-4" style="color:var(--forest);">Social Profiles</h3>
+            <div class="social-row flex flex-wrap gap-2">
+              <a href="https://www.linkedin.com/in/phdbalogun/" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" title="Twitter/X"><i class="fab fa-x-twitter"></i></a>
+              <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+
+          <div class="rounded-2xl overflow-hidden p-6 text-white"
+            style="background:var(--forest); background-image:radial-gradient(ellipse 70% 80% at 80% 20%, rgba(62,158,114,.25) 0%, transparent 65%);">
+            <p class="text-xs font-bold uppercase tracking-wider mb-1" style="color:rgba(255,255,255,.5);">Executive
+              Advisory</p>
+            <h3 class="font-extrabold text-lg leading-tight mb-3">Invite Philip to Speak, Facilitate or Advise</h3>
+            <p class="text-xs leading-relaxed mb-5" style="color:rgba(255,255,255,.6);">For infrastructure,
+              public-sector delivery, PPP, ESG, AI/data-enabled project systems and institutional reform conversations.
+            </p>
+            <button class="btn-primary w-full justify-center"><i class="fas fa-calendar-check text-xs"></i> Start a
+              Conversation</button>
+          </div>
+        </div>
+      </aside>
+
+      <main class="lg:col-span-2 order-1 lg:order-2">
+        <div id="about-tab" class="tab-pane active">
+          <div class="card mb-5">
+            <span class="section-label">About</span>
+            <h2 class="text-2xl font-extrabold mb-4" style="color:var(--forest);">Executive Profile</h2>
+            <p class="text-sm leading-7 mb-4" style="color:var(--text-muted);">Philip A. Balogun works at the
+              intersection of infrastructure, institutions and impact. His professional journey has moved from technical
+              delivery into a broader public-value agenda: how infrastructure is planned, financed, governed, delivered,
+              maintained and translated into better outcomes for people.</p>
+            <p class="text-sm leading-7 mb-4" style="color:var(--text-muted);">He brings field-tested experience from
+              complex humanitarian and development environments, combined with advisory capability in project and
+              programme management, procurement, risk, institutional systems, PPP readiness, ESG-aligned delivery,
+              training and digital project environments.</p>
+            <p class="text-sm leading-7" style="color:var(--text-muted);">What distinguishes Philip is his ability to
+              connect the technical and the strategic: the physical realities of infrastructure, the governance
+              routines, financing constraints, stakeholder incentives, data gaps and institutional behaviours that
+              determine whether projects succeed.</p>
+          </div>
+
+          <div id="services" class="mb-5">
+            <span class="section-label">Advisory</span>
+            <h2 class="text-xl font-extrabold mb-4" style="color:var(--forest);">Advisory Practices</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div class="card card-hover flex items-start gap-4">
+                <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
+                  style="background:var(--sage-bg);"><i class="fas fa-drafting-compass text-sm"
+                    style="color:var(--accent);"></i></div>
+                <div>
+                  <h4 class="font-bold text-sm mb-1" style="color:var(--forest);">Infrastructure &amp; Capital Projects
+                  </h4>
+                  <p class="text-xs leading-relaxed" style="color:var(--text-muted);">Project diagnostics, contractor
+                    performance, risk controls, quality assurance, lifecycle planning and delivery recovery.</p>
+                </div>
+              </div>
+              <div class="card card-hover flex items-start gap-4">
+                <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
+                  style="background:var(--sage-bg);"><i class="fas fa-building-columns text-sm"
+                    style="color:var(--accent);"></i></div>
+                <div>
+                  <h4 class="font-bold text-sm mb-1" style="color:var(--forest);">PPP &amp; Investment Readiness</h4>
+                  <p class="text-xs leading-relaxed" style="color:var(--text-muted);">PPP screening, bankability logic,
+                    risk allocation, value-for-money framing and investment narratives.</p>
+                </div>
+              </div>
+              <div class="card card-hover flex items-start gap-4">
+                <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
+                  style="background:var(--sage-bg);"><i class="fas fa-leaf text-sm" style="color:var(--accent);"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-sm mb-1" style="color:var(--forest);">ESG &amp; Social Impact</h4>
+                  <p class="text-xs leading-relaxed" style="color:var(--text-muted);">ESG-aligned project framing,
+                    inclusion, climate resilience, safeguarding and social value delivery.</p>
+                </div>
+              </div>
+              <div class="card card-hover flex items-start gap-4">
+                <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
+                  style="background:var(--sage-bg);"><i class="fas fa-city text-sm" style="color:var(--accent);"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-sm mb-1" style="color:var(--forest);">Urban Systems &amp; Public Services
+                  </h4>
+                  <p class="text-xs leading-relaxed" style="color:var(--text-muted);">Water, sanitation, energy, health
+                    facilities, public utilities and service delivery systems.</p>
+                </div>
+              </div>
+              <div class="card card-hover flex items-start gap-4">
+                <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
+                  style="background:var(--sage-bg);"><i class="fas fa-chart-network text-sm"
+                    style="color:var(--accent);"></i></div>
+                <div>
+                  <h4 class="font-bold text-sm mb-1" style="color:var(--forest);">AI/Data-enabled Delivery</h4>
+                  <p class="text-xs leading-relaxed" style="color:var(--text-muted);">Dashboards, project intelligence,
+                    automation, reporting systems and institutional memory.</p>
+                </div>
+              </div>
+              <div class="card card-hover flex items-start gap-4">
+                <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
+                  style="background:var(--sage-bg);"><i class="fas fa-people-arrows text-sm"
+                    style="color:var(--accent);"></i></div>
+                <div>
+                  <h4 class="font-bold text-sm mb-1" style="color:var(--forest);">Institutional Reform &amp; Training
+                  </h4>
+                  <p class="text-xs leading-relaxed" style="color:var(--text-muted);">Delivery routines, leadership
+                    systems, training academies, procurement governance and change management.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-5">
+            <span class="section-label">Credentials</span>
+            <h2 class="text-xl font-extrabold mb-5" style="color:var(--forest);">Certifications &amp; Professional
+              Anchors</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div class="flex items-start gap-3 p-4 rounded-xl"
+                style="background:var(--sage-bg); border:1.5px solid var(--border-light);">
+                <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
+                  style="background:var(--forest);"><i class="fas fa-certificate text-white text-sm"></i></div>
+                <div>
+                  <h4 class="font-bold text-sm" style="color:var(--forest);">PMP · PMI-ACP · PMI-RMP</h4>
+                  <p class="text-xs" style="color:var(--text-muted);">Project, agile and risk management credentials</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3 p-4 rounded-xl"
+                style="background:var(--sage-bg); border:1.5px solid var(--border-light);">
+                <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
+                  style="background:var(--forest);"><i class="fas fa-handshake text-white text-sm"></i></div>
+                <div>
+                  <h4 class="font-bold text-sm" style="color:var(--forest);">CP3P Foundation</h4>
+                  <p class="text-xs" style="color:var(--text-muted);">PPP and infrastructure finance readiness
+                    foundation</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3 p-4 rounded-xl"
+                style="background:var(--sage-bg); border:1.5px solid var(--border-light);">
+                <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
+                  style="background:var(--forest);"><i class="fas fa-hard-hat text-white text-sm"></i></div>
+                <div>
+                  <h4 class="font-bold text-sm" style="color:var(--forest);">Engineering &amp; Built Environment</h4>
+                  <p class="text-xs" style="color:var(--text-muted);">Civil engineering, construction, QS/RICS pathway
+                    and infrastructure delivery</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3 p-4 rounded-xl"
+                style="background:var(--sage-bg); border:1.5px solid var(--border-light);">
+                <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
+                  style="background:var(--forest);"><i class="fas fa-database text-white text-sm"></i></div>
+                <div>
+                  <h4 class="font-bold text-sm" style="color:var(--forest);">Data Science &amp; Business Analytics</h4>
+                  <p class="text-xs" style="color:var(--text-muted);">Digital project environments, dashboards and
+                    analytics-informed delivery</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="experience-tab" class="tab-pane">
+          <div class="card mb-5">
+            <span class="section-label">Experience</span>
+            <h2 class="text-xl font-extrabold mb-7" style="color:var(--forest);">Selected Experience Narrative</h2>
+            <div class="timeline space-y-7">
+              <div class="tl-item">
+                <div class="tl-dot"></div>
+                <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1 mb-2">
+                  <div>
+                    <h4 class="font-bold text-sm" style="color:var(--forest);">Water &amp; Habitat / Detention
+                      Infrastructure / Systems Support</h4>
+                    <p class="text-xs font-semibold" style="color:var(--accent);">ICRC Nigeria</p>
+                  </div><span class="badge flex-shrink-0" style="font-size:.68rem;">2016 — Present</span>
+                </div>
+                <p class="text-xs leading-relaxed mb-3" style="color:var(--text-muted);">Anchor experience in complex
+                  humanitarian infrastructure, WASH systems, detention infrastructure diagnostics, construction
+                  supervision, emergency response, stakeholder engagement and institutional maintenance models.</p>
+                <div class="flex flex-wrap gap-1.5"><span class="tag">Humanitarian Infrastructure</span><span
+                    class="tag">WASH</span><span class="tag">Systems Support</span></div>
+              </div>
+              <div class="tl-item">
+                <div class="tl-dot"></div>
+                <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1 mb-2">
+                  <div>
+                    <h4 class="font-bold text-sm" style="color:var(--forest);">Infrastructure Coordination &amp; Water
+                      Systems Delivery</h4>
+                    <p class="text-xs font-semibold" style="color:var(--accent);">Mercy Corps / ST WASH</p>
+                  </div><span class="badge flex-shrink-0" style="font-size:.68rem;">2026</span>
+                </div>
+                <p class="text-xs leading-relaxed mb-3" style="color:var(--text-muted);">Development programme and
+                  public utility strengthening platform: coordination with state actors, contractors, procurement,
+                  design/site teams, donor reporting, project controls and risk escalation.</p>
+                <div class="flex flex-wrap gap-1.5"><span class="tag">Water Schemes</span><span class="tag">State
+                    Coordination</span><span class="tag">Donor Reporting</span></div>
+              </div>
+              <div class="tl-item">
+                <div class="tl-dot"></div>
+                <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1 mb-2">
+                  <div>
+                    <h4 class="font-bold text-sm" style="color:var(--forest);">Founder / Advisory / Training / Capacity
+                      Building</h4>
+                    <p class="text-xs font-semibold" style="color:var(--accent);">P&amp;A Consulting Limited</p>
+                  </div><span class="badge flex-shrink-0" style="font-size:.68rem;">Founder Platform</span>
+                </div>
+                <p class="text-xs leading-relaxed mb-3" style="color:var(--text-muted);">A professional training and
+                  advisory platform for project management, risk, procurement, PPP, ESG, infrastructure governance,
+                  AI-enabled delivery and public-sector capacity building.</p>
+                <div class="flex flex-wrap gap-1.5"><span class="tag">Executive Training</span><span
+                    class="tag">Institutional Capacity</span><span class="tag">Public Value</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <span class="section-label">Education</span>
+            <h2 class="text-xl font-extrabold mb-7" style="color:var(--forest);">Education &amp; Knowledge Base</h2>
+            <div class="timeline space-y-7">
+              <div class="tl-item">
+                <div class="tl-dot edu"></div>
+                <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1 mb-2">
+                  <div>
+                    <h4 class="font-bold text-sm" style="color:var(--forest);">Civil Engineering / Infrastructure
+                      Foundation</h4>
+                    <p class="text-xs font-semibold" style="color:#9B7834;">Engineering and built environment pathway
+                    </p>
+                  </div><span class="badge gold flex-shrink-0" style="font-size:.68rem;">Core Foundation</span>
+                </div>
+                <p class="text-xs leading-relaxed" style="color:var(--text-muted);">Technical base for infrastructure
+                  diagnostics, capital projects, WASH systems, construction supervision and lifecycle delivery.</p>
+              </div>
+              <div class="tl-item">
+                <div class="tl-dot edu"></div>
+                <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1 mb-2">
+                  <div>
+                    <h4 class="font-bold text-sm" style="color:var(--forest);">Public Health, Data Science &amp;
+                      Business Analytics</h4>
+                    <p class="text-xs font-semibold" style="color:#9B7834;">Cross-cutting knowledge base</p>
+                  </div><span class="badge gold flex-shrink-0" style="font-size:.68rem;">Modern Edge</span>
+                </div>
+                <p class="text-xs leading-relaxed" style="color:var(--text-muted);">Strengthens the portfolio across
+                  public health infrastructure, evidence use, dashboards, AI/data-enabled project delivery and
+                  institutional intelligence.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="portfolio-tab" class="tab-pane">
+          <span class="section-label">Portfolio</span>
+          <h2 class="text-xl font-extrabold mb-5" style="color:var(--forest);">Featured Public-Value Workstreams</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div class="portfolio-card">
+              <div class="portfolio-thumb"><img src="images/infrastructure/infrastructure-01.jpg"
+                  alt="Detention Infrastructure and Dignity Systems" /></div>
+              <div class="p-5">
+                <div class="flex items-start justify-between gap-2 mb-2">
+                  <h4 class="font-bold text-sm" style="color:var(--forest);">Detention Infrastructure &amp; Dignity
+                    Systems</h4><span class="badge green" style="font-size:.65rem;padding:3px 9px;">Anchor</span>
+                </div>
+                <p class="text-xs leading-relaxed mb-4" style="color:var(--text-muted);">Reframing WASH and detention
+                  work as humanitarian infrastructure, dignity, safety, resilience and institutional maintenance.</p>
+                <div class="flex flex-wrap gap-1.5 mb-4"><span class="tag">WASH</span><span
+                    class="tag">Dignity</span><span class="tag">Resilience</span></div><button class="btn-outline"
+                  style="font-size:.75rem;padding:7px 16px;">View Case Study <i
+                    class="fas fa-arrow-right text-[10px]"></i></button>
+              </div>
+            </div>
+            <div class="portfolio-card">
+              <div class="portfolio-thumb"><img src="images/infrastructure/infrastructure-02.jpg"
+                  alt="Water Scheme Rehabilitation" /></div>
+              <div class="p-5">
+                <div class="flex items-start justify-between gap-2 mb-2">
+                  <h4 class="font-bold text-sm" style="color:var(--forest);">Water Scheme Rehabilitation &amp; Utility
+                    Strengthening</h4><span class="badge green" style="font-size:.65rem;padding:3px 9px;">Active</span>
+                </div>
+                <p class="text-xs leading-relaxed mb-4" style="color:var(--text-muted);">Public utility rehabilitation,
+                  contractor coordination, state engagement, technical governance and service continuity.</p>
+                <div class="flex flex-wrap gap-1.5 mb-4"><span class="tag">Water Systems</span><span
+                    class="tag">Utilities</span><span class="tag">Coordination</span></div><button class="btn-outline"
+                  style="font-size:.75rem;padding:7px 16px;">View Case Study <i
+                    class="fas fa-arrow-right text-[10px]"></i></button>
+              </div>
+            </div>
+            <div class="portfolio-card">
+              <div class="portfolio-thumb"><img src="images/trainings/training-01.jpg"
+                  alt="Public Sector Capacity Building" /></div>
+              <div class="p-5">
+                <div class="flex items-start justify-between gap-2 mb-2">
+                  <h4 class="font-bold text-sm" style="color:var(--forest);">Public-Sector Capacity Building &amp;
+                    Delivery Discipline</h4><span class="badge"
+                    style="font-size:.65rem;padding:3px 9px;">Training</span>
+                </div>
+                <p class="text-xs leading-relaxed mb-4" style="color:var(--text-muted);">Training as institutional
+                  reform: leadership routines, reporting, action tracking, decision cycles and practical capability.</p>
+                <div class="flex flex-wrap gap-1.5 mb-4"><span class="tag">Training</span><span
+                    class="tag">Leadership</span><span class="tag">Delivery</span></div><button class="btn-outline"
+                  style="font-size:.75rem;padding:7px 16px;">View Case Study <i
+                    class="fas fa-arrow-right text-[10px]"></i></button>
+              </div>
+            </div>
+            <div class="portfolio-card">
+              <div class="portfolio-thumb"><img src="images/advisory/advisory-01.jpg"
+                  alt="PPP and Social Infrastructure Investment" /></div>
+              <div class="p-5">
+                <div class="flex items-start justify-between gap-2 mb-2">
+                  <h4 class="font-bold text-sm" style="color:var(--forest);">PPP &amp; Social Infrastructure Investment
+                    Narrative</h4><span class="badge gold" style="font-size:.65rem;padding:3px 9px;">Thought
+                    Leadership</span>
+                </div>
+                <p class="text-xs leading-relaxed mb-4" style="color:var(--text-muted);">Private-sector investment,
+                  social infrastructure, blended finance, social bonds and capital-ready public-value narratives.</p>
+                <div class="flex flex-wrap gap-1.5 mb-4"><span class="tag">PPP</span><span
+                    class="tag">Finance</span><span class="tag">Impact</span></div><button class="btn-outline"
+                  style="font-size:.75rem;padding:7px 16px;">View Case Study <i
+                    class="fas fa-arrow-right text-[10px]"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="insights-tab" class="tab-pane">
+          <div class="card mb-5">
+            <span class="section-label">Insights</span>
+            <h2 class="text-xl font-extrabold mb-5" style="color:var(--forest);">Publications &amp; Thought Leadership
+            </h2>
+            <div class="space-y-4">
+              <div class="insight-card">
+                <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3">
+                  <div><span class="badge gold mb-3">Publication · Dec 2025</span>
+                    <h3 class="font-bold text-sm mb-2" style="color:var(--forest);">Private Sector Investment in Social
+                      Protection and Infrastructure Service Delivery in Nigeria</h3>
+                    <p class="text-xs leading-relaxed" style="color:var(--text-muted);">Knowledge anchor for PPPs,
+                      blended finance, impact investment, social bonds, corporate social investment and social
+                      infrastructure delivery.</p>
+                  </div><a href="https://infraspotlight.com/wp-content/uploads/2025/12/CSG-Report-Infraspotlight.pdf"
+                    target="_blank" class="btn-primary flex-shrink-0" style="font-size:.75rem;padding:8px 16px;">Read
+                    PDF <i class="fas fa-arrow-up-right-from-square text-[10px]"></i></a>
+                </div>
+              </div>
+              <div class="insight-card"><span class="badge mb-3">Forthcoming</span>
+                <h3 class="font-bold text-sm mb-2" style="color:var(--forest);">PPP Readiness Is Not a Document</h3>
+                <p class="text-xs leading-relaxed" style="color:var(--text-muted);">Why successful PPPs require demand
+                  logic, risk allocation, revenue systems, political economy, ESG and delivery capability.</p>
+              </div>
+              <div class="insight-card"><span class="badge mb-3">Forthcoming</span>
+                <h3 class="font-bold text-sm mb-2" style="color:var(--forest);">AI for Public Project Delivery</h3>
+                <p class="text-xs leading-relaxed" style="color:var(--text-muted);">How institutions can use AI for
+                  reporting, risk intelligence, stakeholder communication and institutional memory.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="contact" class="mt-6">
+          <div class="card"
+            style="background:var(--forest); border-color:var(--forest); background-image:radial-gradient(ellipse 60% 70% at 90% 10%, rgba(62,158,114,.25) 0%, transparent 60%);">
+            <span class="section-label" style="color:rgba(255,255,255,.55);">Get In Touch</span>
+            <h2 class="text-xl font-extrabold mb-2 text-white">Start a Conversation</h2>
+            <p class="text-xs mb-6" style="color:rgba(255,255,255,.55);">For advisory engagements, speaking invitations,
+              training programmes and institutional partnerships.</p>
+            <form onsubmit="handleContactSubmit(event)" class="space-y-3">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3"><input type="text" placeholder="Your Name"
+                  class="field" required /><input type="email" placeholder="Email Address" class="field" required />
+              </div>
+              <input type="text" placeholder="Subject / Engagement Type" class="field" />
+              <textarea placeholder="Tell Philip about your advisory, training or speaking request..." rows="4"
+                class="field" style="resize:none;"></textarea>
+              <button type="submit" class="btn-primary w-full justify-center py-3"><i
+                  class="fas fa-paper-plane text-xs"></i> Send Message</button>
+            </form>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <footer style="background:var(--forest-deep);" class="py-12 mt-10">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-9 mb-10">
+        <div class="sm:col-span-2 lg:col-span-1">
+          <div class="flex items-center gap-2.5 mb-4">
+            <div class="brand-mark">PAB</div>
+            <div><span class="text-white font-bold text-sm block">Philip A.</span><span class="text-[10px] block"
+                style="color:rgba(255,255,255,.4);margin-top:-2px;">Balogun</span></div>
+          </div>
+          <p class="text-xs leading-6 max-w-xs mb-5" style="color:rgba(255,255,255,.45);">Designing delivery systems for
+            resilient infrastructure, stronger institutions and sustainable public outcomes.</p>
+          <div class="flex gap-2"><a href="https://www.linkedin.com/in/phdbalogun/" class="social-row"
+              style="display:flex;width:32px;height:32px;align-items:center;justify-content:center;border-radius:50%;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);color:rgba(255,255,255,.6);font-size:.7rem;"><i
+                class="fab fa-linkedin-in"></i></a><a href="#"
+              style="display:flex;width:32px;height:32px;align-items:center;justify-content:center;border-radius:50%;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);color:rgba(255,255,255,.6);font-size:.7rem;"><i
+                class="fab fa-x-twitter"></i></a><a href="#"
+              style="display:flex;width:32px;height:32px;align-items:center;justify-content:center;border-radius:50%;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);color:rgba(255,255,255,.6);font-size:.7rem;"><i
+                class="fab fa-instagram"></i></a></div>
+        </div>
+        <div>
+          <h5 class="text-white text-sm font-bold mb-4">Pages</h5>
+          <ul class="space-y-2.5">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="#about-tab" class="footer-link">Profile</a></li>
+            <li><a href="#services" class="footer-link">Advisory</a></li>
+            <li><a href="#portfolio-tab" class="footer-link">Portfolio</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="text-white text-sm font-bold mb-4">Resources</h5>
+          <ul class="space-y-2.5">
+            <li><a href="#insights-tab" class="footer-link">Insights &amp; Articles</a></li>
+            <li><a href="#portfolio-tab" class="footer-link">Case Studies</a></li>
+            <li><a href="#contact" class="footer-link">Contact Philip</a></li>
+            <li><a href="#" class="footer-link">Frameworks</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="text-white text-sm font-bold mb-4">Focus</h5>
+          <ul class="space-y-2.5">
+            <li><a href="#" class="footer-link">Public Value Delivery</a></li>
+            <li><a href="#" class="footer-link">PPP &amp; ESG</a></li>
+            <li><a href="#" class="footer-link">Urban Systems</a></li>
+            <li><a href="#" class="footer-link">AI/Data Delivery</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="pt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2"
+        style="border-top:1px solid rgba(255,255,255,.08);">
+        <p class="text-xs" style="color:rgba(255,255,255,.3);">© 2026 Philip A. Balogun. All rights reserved.</p>
+        <p class="text-xs" style="color:rgba(255,255,255,.25);">Infrastructure Transformation · Public Value Delivery ·
+          Institutional Reform</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      const open = !mobileMenu.classList.contains('hidden');
+      mobileMenu.classList.toggle('hidden', open);
+      menuBtn.innerHTML = open ? '<i class="fas fa-bars text-lg"></i>' : '<i class="fas fa-times text-lg"></i>';
+    });
+
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        menuBtn.innerHTML = '<i class="fas fa-bars text-lg"></i>';
+      });
+    });
+
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const target = btn.dataset.tab;
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+        btn.classList.add('active');
+        document.getElementById(target).classList.add('active');
+        setTimeout(animateSkillBars, 60);
+      });
+    });
+
+    function animateSkillBars() {
+      document.querySelectorAll('.skill-bar-fill').forEach(bar => {
+        const w = bar.dataset.width || '0%';
+        bar.style.width = w;
+      });
+    }
+
+    const barObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.querySelectorAll('.skill-bar-fill').forEach(bar => {
+            bar.style.width = bar.dataset.width || '0%';
+          });
+          barObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.3 });
+    document.querySelectorAll('.card').forEach(c => barObserver.observe(c));
+
+    const fadeObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'none';
+          fadeObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.card, .portfolio-card, .insight-card, .tl-item').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(16px)';
+      el.style.transition = 'opacity .45s ease, transform .45s ease';
+      fadeObserver.observe(el);
+    });
+
+    function handleContactSubmit(e) {
+      e.preventDefault();
+      const btn = e.target.querySelector('[type="submit"]');
+      btn.innerHTML = '<i class="fas fa-check text-xs"></i> Message Sent!';
+      btn.style.background = '#16a34a';
+      setTimeout(() => {
+        btn.innerHTML = '<i class="fas fa-paper-plane text-xs"></i> Send Message';
+        btn.style.background = '';
+        e.target.reset();
+      }, 3000);
+    }
+    setTimeout(animateSkillBars, 400);
+  </script>
+
+</body>
+
+</html>
